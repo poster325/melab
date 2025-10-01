@@ -17,10 +17,7 @@ if (!response.ok) {
 }
 // console.log(response);
 const text = await response.text();
-console.log("CSV text:", text.substring(0, 500));
 let [data_list, headers] = csvToArray(text);
-console.log("Headers:", headers);
-console.log("Data list (first 3):", data_list.slice(0, 3));
 
 const profile_type_container = document.getElementById("profile_type_list");
 
@@ -93,7 +90,6 @@ types.forEach(type => {
     const email = data["email"];
     const position = data["Position"];
     const campus = data["Campus"];
-    console.log("Processing:", name, "| image field:", data["image"], "| type:", typeof data["image"]);
     const image = (data["image"] && data["image"] !== "" && data["image"] !== "undefined") ? "data/people/" + data["image"] : '/assets/people/placeholder.png';
 
     const temp_people_card = document.createElement('a');
@@ -179,7 +175,6 @@ function csvToArray(str, delimiter = ",") {
     // Split into lines
     const lines = str.split('\n');
     const headers = lines[0].split(delimiter);
-    console.log("Parsed headers:", headers);
     
     const arr = lines.slice(1).map(row => {
       if (!row.trim()) return null; // Skip empty rows
