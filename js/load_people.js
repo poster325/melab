@@ -17,9 +17,10 @@ if (!response.ok) {
 }
 // console.log(response);
 const text = await response.text();
-// console.log(text);
+console.log("CSV text:", text.substring(0, 500));
 let [data_list, headers] = csvToArray(text);
-// console.log(data_list, headers)
+console.log("Headers:", headers);
+console.log("Data list (first 3):", data_list.slice(0, 3));
 
 const profile_type_container = document.getElementById("profile_type_list");
 
@@ -92,7 +93,8 @@ types.forEach(type => {
     const email = data["email"];
     const position = data["Position"];
     const campus = data["Campus"];
-    const image = data["image"] != "" ? "data/people/" + data["image"] : '/assets/people/placeholder.png';
+    console.log("Processing:", name, "| image field:", data["image"], "| type:", typeof data["image"]);
+    const image = (data["image"] && data["image"] !== "" && data["image"] !== "undefined") ? "data/people/" + data["image"] : '/assets/people/placeholder.png';
 
     const temp_people_card = document.createElement('a');
     temp_people_card.classList.add("hover_dim");
@@ -319,7 +321,7 @@ function loadMemberData(person) {
     headerElement.innerHTML = `
       <div class="personal-info">
         ${
-          person.type != "Alumni" ? `<img src="${person.image == "" ? '/assets/people/placeholder.png' : "data/people/" + person.image}" alt="${person.Name}'s profile" class="profile-img" />` : ``
+          person.type != "Alumni" ? `<img src="${(person.image && person.image !== "" && person.image !== "undefined") ? "data/people/" + person.image : '/assets/people/placeholder.png'}" alt="${person.Name}'s profile" class="profile-img" />` : ``
         }
         <div class="profile-text">
           <div class="name">${person.Name}</div>
