@@ -1,11 +1,7 @@
 // Earth animation configuration
 const totalFrames = 250;
-const fps = 20;
-const frameInterval = 1000 / fps; // 50ms per frame
-
-// Year configuration
-const years = [1850, 1900, 1950, 2000, 2050, 2100];
-const framesPerYear = totalFrames / (years.length - 1); // 50 frames per year transition
+const fps = 15;
+const frameInterval = 1000 / fps; // ~66.67ms per frame
 
 let currentFrame = 1;
 let animationInterval;
@@ -19,20 +15,20 @@ function padFrameNumber(num) {
     return String(num).padStart(4, '0');
 }
 
-// Function to get current year based on frame
+// Function to get current year based on frame (smooth transition from 1850 to 2100)
 function getCurrentYear(frame) {
-    const yearIndex = Math.floor((frame - 1) / framesPerYear);
-    return years[Math.min(yearIndex, years.length - 1)];
+    // Linear interpolation from 1850 to 2100 over 250 frames
+    const year = 1850 + Math.round((frame - 1) / (totalFrames - 1) * (2100 - 1850));
+    return year;
 }
 
 // Function to get year label
 function getYearLabel(year) {
-    if (year <= 1900) {
-        return `Historical, AD ${year}`;
-    } else if (year <= 2020) {
-        return `Historical, AD ${year}`;
+    // Historical period up to around 2015, then SSP585 projection
+    if (year <= 2015) {
+        return `Historical, A.D. ${year}`;
     } else {
-        return `Future Projection, AD ${year}`;
+        return `SSP585, A.D. ${year}`;
     }
 }
 
