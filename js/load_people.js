@@ -173,25 +173,26 @@ types.forEach(type => {
 });
 
 function csvToArray(str, delimiter = ",") {
-    // console.log(str)
-    const headers = str.slice(0, str.indexOf("\r\n")).split(delimiter);
-    // console.log(headers)
-    const rows = str.slice(str.indexOf("\n") + 1).split("\r\n");
-    // console.log(rows)
-
-    const arr = rows.map(row => {
-      // console.log(row)
+    // Normalize line endings to \n
+    str = str.replace(/\r\n/g, '\n').replace(/\r/g, '\n');
+    
+    // Split into lines
+    const lines = str.split('\n');
+    const headers = lines[0].split(delimiter);
+    console.log("Parsed headers:", headers);
+    
+    const arr = lines.slice(1).map(row => {
+      if (!row.trim()) return null; // Skip empty rows
+      
       let values = row.match(/(".*?"|[^",]+|(?<=,)(?=,)|(?<=^)(?=,)|(?<=,)(?=$))/gs);
-      // console.log(values)
       values = values ? values.map(value => value.replace(/^"|"$/g, '')) : [];
-      // console.log(values)
+      
       const el = headers.reduce(function (object, header, index) {
-        object[header] = values[index];
+        object[header] = values[index] || '';
         return object;
       }, {});
-      // console.log(el)
       return el;
-    });
+    }).filter(row => row !== null);
     
     return [arr, headers];
 }
