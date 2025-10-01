@@ -11,7 +11,7 @@ let selected = "none"; // "member_name"
 
 
 
-const response = await fetch('/data/Web 1de9bb83ec3b80b6a257e12869803932/People aa379227474043d7a198275297c2fa3f_all.csv')
+const response = await fetch('/data/people/People aa379227474043d7a198275297c2fa3f_all.csv')
 if (!response.ok) {
     throw new Error('error')
 }
@@ -92,7 +92,7 @@ types.forEach(type => {
     const email = data["email"];
     const position = data["Position"];
     const campus = data["Campus"];
-    const image = data["image"] != "" ? "data/" + data["image"] : '/assets/people/placeholder.png';
+    const image = data["image"] != "" ? "data/people/" + data["image"] : '/assets/people/placeholder.png';
 
     const temp_people_card = document.createElement('a');
     temp_people_card.classList.add("hover_dim");
@@ -319,7 +319,7 @@ function loadMemberData(person) {
     headerElement.innerHTML = `
       <div class="personal-info">
         ${
-          person.type != "Alumni" ? `<img src="${person.image == "" ? '/assets/people/placeholder.png' : "data/" + person.image}" alt="${person.Name}'s profile" class="profile-img" />` : ``
+          person.type != "Alumni" ? `<img src="${person.image == "" ? '/assets/people/placeholder.png' : "data/people/" + person.image}" alt="${person.Name}'s profile" class="profile-img" />` : ``
         }
         <div class="profile-text">
           <div class="name">${person.Name}</div>
