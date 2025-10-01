@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/advanced_animations.css" />
+
+    <title>About - Meta Earth Lab</title>
+
+  </head>
+
+  <body>
+    
+    <!-- PRELOADER -->
+    <div id="page-preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <img src="./assets/lab_icon.svg" alt="Meta Earth Lab" />
+        </div>
+        <div class="preloader-text">Loading...</div>
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+
+    <!--  HEADER  -->
+    <header class="header" id="header">
+
+      <!-- NAVIGATION CONTAINER -->
+      <div class="header_container">
+
+        <!-- NAVIGATION ICON -->
+        <a class="header_icon" href="./index.html">
+          <img class="lab_icon" src="./assets/lab_icon.svg" alt="meta" />
+          <div class="lab_name">Meta Earth Lab</div>
+        </a>
+
+        <!-- NAVIGATION MENU -->
+        <div class="header_nav" id="nav-menu">
+          <a class="nav_item hover_dim"
+            href="./about.html"
+          >
+            <i class="uil uil-info-circle nav__icon font-bold"></i> About
+          </a>
+          <a class="nav_item hover_dim"
+            href="./news.html"
+          >
+            <i class="uil uil-file nav__icon"></i> News
+          </a>
+          <a class="nav_item hover_dim"
+            href="./people.html"
+          >
+            <i class="uil uil-users-alt nav__icon"></i> People
+          </a>
+          <a class="nav_item hover_dim"
+            href="./publications.html"
+          >
+            <i class="uil uil-file nav__icon"></i> Publications
+          </a>
+          <a class="nav_item hover_dim"
+            href="./contacts.html"
+          >
+            <i class="uil uil-info-circle nav__icon"></i> Contact
+          </a>
+        </div>
+
+      </div>
+
+    </header>
+
+
+    <!--  MAIN  -->
+    <main class="main" style="min-height: 100vh; padding-top: 120px; padding-bottom: 80px;">
+
+      <!-- About/Work Section -->
+      <div style="width: 100%; max-width: 1128px; display: flex; flex-direction: column; gap: 48px; align-items: center;">
+        
+        <!-- Title Section -->
+        <div style="width: 100%;" data-reveal="bottom">
+          <div style="font-size: 48px; font-weight: 700; margin-bottom: 24px;">
+            Our Work
+          </div>
+          <div style="font-size: 24px; font-weight: 300; margin-bottom: 8px;">
+            We study future of Earth and Us
+          </div>
+          <div style="font-size: 18px; font-weight: 300; color: #666;">
+            from how human life is would change the climate
+          </div>
+        </div>
+
+        <!-- Climate Impact Images -->
+        <div style="width: 100%; height: 240px; display: flex; gap: 0;" data-reveal="scale">
+          <div style="flex: 1; overflow: hidden;">
+            <img
+              src="./assets/index/water.png"
+              alt="water"
+              style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.4s ease;"
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div style="flex: 1; overflow: hidden;">
+            <img
+              src="./assets/index/factory.png"
+              alt="factory"
+              style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.4s ease;"
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div style="flex: 1; overflow: hidden;">
+            <img
+              src="./assets/index/tornado.png"
+              alt="tornado"
+              style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.4s ease;"
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div style="flex: 1; overflow: hidden;">
+            <img
+              src="./assets/index/forest fire.png"
+              alt="forest fire"
+              style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.4s ease;"
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div style="flex: 1; overflow: hidden;">
+            <img
+              src="./assets/index/starvation.png"
+              alt="starvation"
+              style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.4s ease;"
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+          <div style="flex: 1; overflow: hidden;">
+            <img
+              src="./assets/index/rain.png"
+              alt="rain"
+              style="object-fit: cover; width: 100%; height: 100%; transition: transform 0.4s ease;"
+              onmouseover="this.style.transform='scale(1.1)'"
+              onmouseout="this.style.transform='scale(1)'"
+            />
+          </div>
+        </div>
+
+        <!-- Bottom Text -->
+        <div style="width: 100%; text-align: right;" data-reveal="bottom">
+          <div style="font-size: 18px; font-weight: 300; color: #666;">
+            to how that climate would change human life again
+          </div>
+        </div>
+
+      </div>
+
+    </main>
+
+    <!--  FOOTER  -->
+    <footer class="footer">
+      &#169; Meta Earth Lab. All rights reserved
+    </footer>
+
+  </body>
+
+  <!--  JS  -->
+  <script src="./js/advanced_animations.js"></script>
+</html>
+

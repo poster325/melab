@@ -3,6 +3,7 @@
 
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -10,13 +11,25 @@
     />
 
     <!--  CSS  -->
-    <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/advanced_animations.css" />
 
-    <title>Meta Earth Lab</title>
+    <title>News - Meta Earth Lab</title>
   </head>
 
   <body>
     
+    <!-- PRELOADER -->
+    <div id="page-preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <img src="./assets/lab_icon.svg" alt="Meta Earth Lab" />
+        </div>
+        <div class="preloader-text">Loading...</div>
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+
     <!--  HEADER  -->
     <header class="header" id="header">
 
@@ -24,22 +37,22 @@
       <div class="header_container">
 
         <!-- NAVIGATION ICON -->
-        <a class="header_icon" href="/index.html">
-          <img class="lab_icon" src="/assets/lab_icon.svg" alt="meta" />
+        <a class="header_icon" href="./index.html">
+          <img class="lab_icon" src="./assets/lab_icon.svg" alt="meta" />
           <div class="lab_name">Meta Earth Lab</div>
         </a>
 
         <!-- NAVIGATION MENU -->
         <div class="header_nav" id="nav-menu">
           <a class="nav_item hover_dim"
-            href="/index.html"
+            href="./about.html"
           >
-            <i class="uil uil-estate nav__icon font-bold"></i> Home
+            <i class="uil uil-info-circle nav__icon"></i> About
           </a>
           <a class="nav_item hover_dim"
             href="./news.html"
           >
-            <i class="uil uil-file nav__icon"></i> News
+            <i class="uil uil-file nav__icon font-bold"></i> News
           </a>
           <a class="nav_item hover_dim"
             href="./people.html"
@@ -65,7 +78,33 @@
     <!--  MAIN  -->
     <main class="main" style="margin-top: calc(52px + 64px); margin-bottom: calc(64px);">
 
-      <div id="news" style="width: 100%; max-width: 1128px; display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); row-gap: 24px; column-gap: 24px;">
+      <!-- Highlighted Recent News Section -->
+      <div style="width: 100%; max-width: 1128px; margin-bottom: 80px;" data-reveal="scale">
+        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 32px;">Recent Highlights</h2>
+        
+        <div style="position: relative; width: 100%; aspect-ratio: 16/9; border-radius: 12px; overflow: hidden; box-shadow: 0 8px 32px rgba(0,0,0,0.1);">
+          <div id="highlighted_image" style="position: relative; height: 100%; width: 100%; background-size: cover; background-position: center;"></div>
+          <div style="background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent); position: absolute; bottom: 0; width: 100%; padding: 48px 32px;">
+            <div id="highlighted_title" style="color: white; font-weight: 600; font-size: 32px; margin-bottom: 8px;">Title</div>
+            <div id="highlighted_content" style="color: rgba(255,255,255,0.9); font-weight: 400; font-size: 16px; margin-bottom: 8px; display: -webkit-box; -webkit-line-clamp: 2; -webkit-box-orient: vertical; overflow: hidden;">contents</div>
+            <div id="highlighted_time" style="color: rgba(255,255,255,0.7); font-weight: 400; font-size: 14px;">year</div>
+          </div>
+        </div>
+
+        <!-- Slideshow Navigation Dots -->
+        <div style="display: flex; flex-direction: row; gap: 8px; justify-content: center; margin-top: 24px;">
+          <div id="highlight_btn1" class="slideshow-dot" style="width: 10px; height: 10px; background-color: #333; border-radius: 50%; cursor: pointer;"></div>
+          <div id="highlight_btn2" class="slideshow-dot" style="width: 10px; height: 10px; background-color: #333; border-radius: 50%; cursor: pointer;"></div>
+          <div id="highlight_btn3" class="slideshow-dot" style="width: 10px; height: 10px; background-color: #333; border-radius: 50%; cursor: pointer;"></div>
+        </div>
+      </div>
+
+      <!-- All News Grid -->
+      <div style="width: 100%; max-width: 1128px; margin-bottom: 32px;" data-reveal="bottom">
+        <h2 style="font-size: 32px; font-weight: 700; margin-bottom: 32px;">All News</h2>
+      </div>
+
+      <div id="news" style="width: 100%; max-width: 1128px; display: grid; grid-template-columns: repeat(auto-fill, minmax(360px, 1fr)); row-gap: 24px; column-gap: 24px;" data-reveal="bottom">
       </div>
 
     </main>
@@ -76,7 +115,8 @@
       &#169; Meta Earth Lab. All rights reserved
     </footer>
 
-    <script type="module" src="/js/load_news.js"></script>
+    <script type="module" src="./js/load_news.js"></script>
+    <script src="./js/advanced_animations.js"></script>
   </body>
 
 </html>

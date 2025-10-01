@@ -1,6 +1,6 @@
 const contatiner = document.getElementById("news");
 
-const response = await fetch('/data/news/News acdaa45f52dd43c09e2773b1e2070fd6.csv')
+const response = await fetch('./data/news/News acdaa45f52dd43c09e2773b1e2070fd6.csv')
 if (!response.ok) {
     throw new Error('error')
 }
@@ -9,13 +9,17 @@ const text = await response.text();
 //console.log(text);
 let [data_list, headers] = csvToArray(text);
 // console.log(data_list, headers)
+
+// Store highlighted news data
+let highlightedNews = [];
+
 for(let i=0; i<data_list.length; i++){
     let data = data_list[i]
 
     //console.log(data);
     const title = data["Title"];
     const time = data["Time"];
-    const image = "data/news/" + data["Title Image"];
+    const image = "./data/news/" + data["Title Image"];
     const location = data["Location"];
     let link = data["URL"];
 
@@ -27,6 +31,18 @@ for(let i=0; i<data_list.length; i++){
     }
     content = content.split('\n\n').splice(2).join('\n\n')
     // console.log(content.split('\n\n').splice(2).join('\n\n'))
+
+    // Store first 3 for highlighted section
+    if (highlightedNews.length < 3) {
+        highlightedNews.push({
+            title: title,
+            time: time,
+            image: image,
+            location: location,
+            content: content,
+            link: link
+        });
+    }
 
     const temp_news_card = document.createElement('a');
     temp_news_card.classList.add("hover_dim");
@@ -49,7 +65,45 @@ for(let i=0; i<data_list.length; i++){
     contatiner.appendChild(temp_news_card);
 }
 
+// Initialize highlighted news slideshow
+if (highlightedNews.length > 0) {
+    initHighlightedNews(highlightedNews);
+}
 
+
+
+// Initialize highlighted news slideshow
+function initHighlightedNews(newsData) {
+    const highlightedImage = document.getElementById('highlighted_image');
+    const highlightedTitle = document.getElementById('highlighted_title');
+    const highlightedContent = document.getElementById('highlighted_content');
+    const highlightedTime = document.getElementById('highlighted_time');
+    
+    const btn1 = document.getElementById('highlight_btn1');
+    const btn2 = document.getElementById('highlight_btn2');
+    const btn3 = document.getElementById('highlight_btn3');
+    
+    function changeHighlighted(index) {
+        const news = newsData[index];
+        highlightedImage.style.backgroundImage = `url(${news.image})`;
+        highlightedTitle.textContent = news.title;
+        highlightedContent.textContent = news.content;
+        highlightedTime.textContent = `${news.time}, ${news.location}`;
+        
+        // Update dots
+        btn1.style.backgroundColor = index === 0 ? '#000' : '#ccc';
+        btn2.style.backgroundColor = index === 1 ? '#000' : '#ccc';
+        btn3.style.backgroundColor = index === 2 ? '#000' : '#ccc';
+    }
+    
+    // Initial load
+    changeHighlighted(0);
+    
+    // Attach click handlers
+    btn1.onclick = () => changeHighlighted(0);
+    btn2.onclick = () => changeHighlighted(1);
+    btn3.onclick = () => changeHighlighted(2);
+}
 
 async function loadNewsMD(filepath, use_regex = false) {
     // console.log(filepath)
@@ -60,7 +114,7 @@ async function loadNewsMD(filepath, use_regex = false) {
       }
     }
     if (filepath) {
-      const response = await fetch('/data/news/' + filepath)
+      const response = await fetch('./data/news/' + filepath)
       if (!response.ok) {
         throw new Error('error')
       }

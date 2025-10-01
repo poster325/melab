@@ -1,0 +1,1 @@
+No Content: https://cdn.chipsa.design/_next/static/chunks/pages/about-ed01115a6d5455e0.js
