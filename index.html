@@ -4,6 +4,13 @@
   <head>
     
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- Preload critical assets -->
+    <link rel="preload" href="./assets/index/earth_bg.jpg" as="image" />
+    <link rel="preload" href="./assets/index/earth_animation/earthanim.gif" as="image" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
@@ -12,6 +19,7 @@
 
     <!--  CSS  -->
     <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/page_transitions.css" />
 
     <title>Meta Earth Lab</title>
 
@@ -81,9 +89,9 @@
           </div>
         </div>
         <div style="display: flex; flex-direction: row; gap: 8px;">
-          <div id="slideshow_btn1" class="hover_dim" style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
-          <div id="slideshow_btn2" class="hover_dim" style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
-          <div id="slideshow_btn3" class="hover_dim" style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
+          <div id="slideshow_btn1" class="hover_dim slideshow-dot" style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
+          <div id="slideshow_btn2" class="hover_dim slideshow-dot" style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
+          <div id="slideshow_btn3" class="hover_dim slideshow-dot" style="width: 8px; height: 8px; background-color: white; border-radius: 50%;"></div>
         </div>
       </div>
 
@@ -192,7 +200,7 @@
     </footer>
 
     <!-- background -->
-    <div id="space_background" style="top: 0; left: 0; height: 100vh; width: 100vw; position: fixed; background-image: url('./assets/index/earth_bg.jpg'); background-size: cover; z-index: -1; transition: opacity 0.5s ease-in-out;"></div>
+    <div style="top: 0; left: 0; height: 100vh; width: 100vw; position: fixed; background-image: url('./assets/index/earth_bg.jpg'); background-size: cover; z-index: -1;"></div>
 
   </body>
 
@@ -200,5 +208,5 @@
   <script src="./js/scroll_control.js"></script>
   <script type="module" src="./js/load_intro_news.js"></script>
   <script src="./js/earth_animation.js"></script>
-  <script src="./js/background_fade.js"></script>
+  <script src="./js/page_transitions.js"></script>
 </html>
