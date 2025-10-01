@@ -3,7 +3,9 @@ const totalYears = 2100 - 1850; // 250 years
 const totalFrames = 250; // Matching the GIF frame count
 const frameDuration = 60; // 0.06 seconds = 60ms per frame
 const animationDuration = totalFrames * frameDuration; // Total animation time in ms (15 seconds)
-const yearInterval = frameDuration; // Update year every frame (60ms)
+const transitionTime = 2000; // 2 seconds (fade in + fade out)
+const effectiveAnimationDuration = animationDuration - transitionTime; // 13 seconds
+const yearInterval = effectiveAnimationDuration / totalYears; // ~52ms per year
 const fadeOutDuration = 1000; // 1 second fade out
 const waitDuration = 1000; // 1 second wait
 const fadeInDuration = 1000; // 1 second fade in
