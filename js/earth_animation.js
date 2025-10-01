@@ -1,26 +1,15 @@
-// Earth animation configuration
-const totalFrames = 250;
-const fps = 15;
-const frameInterval = 1000 / fps; // ~66.67ms per frame
+// Year display animation configuration
+const totalYears = 2100 - 1850; // 250 years
+const totalFrames = 250; // Matching the GIF frame count
+const fps = 15; // Matching GIF fps
+const animationDuration = (totalFrames / fps) * 1000; // Total animation time in ms
+const yearInterval = animationDuration / totalYears; // Time per year update
 
-let currentFrame = 1;
-let animationInterval;
+let currentYear = 1850;
+let yearAnimationInterval;
 
-// Get DOM elements
-const earthImage = document.getElementById('earth');
+// Get DOM element
 const earthDate = document.getElementById('earth_date');
-
-// Function to pad frame number with zeros
-function padFrameNumber(num) {
-    return String(num).padStart(4, '0');
-}
-
-// Function to get current year based on frame (smooth transition from 1850 to 2100)
-function getCurrentYear(frame) {
-    // Linear interpolation from 1850 to 2100 over 250 frames
-    const year = 1850 + Math.round((frame - 1) / (totalFrames - 1) * (2100 - 1850));
-    return year;
-}
 
 // Function to get year label
 function getYearLabel(year) {
@@ -32,51 +21,38 @@ function getYearLabel(year) {
     }
 }
 
-// Function to update frame
-function updateFrame() {
-    // Update image
-    earthImage.src = `./assets/index/earth_animation/${padFrameNumber(currentFrame)}.png`;
-    
-    // Update year
-    const currentYear = getCurrentYear(currentFrame);
+// Function to update year display
+function updateYear() {
     earthDate.textContent = getYearLabel(currentYear);
     
-    // Move to next frame
-    currentFrame++;
-    if (currentFrame > totalFrames) {
-        currentFrame = 1; // Loop back to start
+    // Increment year
+    currentYear++;
+    if (currentYear > 2100) {
+        currentYear = 1850; // Loop back to start
     }
 }
 
-// Start animation when page loads
-function startAnimation() {
-    // Initial frame
-    updateFrame();
+// Start year animation when page loads
+function startYearAnimation() {
+    // Initial year
+    updateYear();
     
-    // Set interval for animation
-    animationInterval = setInterval(updateFrame, frameInterval);
+    // Set interval for year updates
+    yearAnimationInterval = setInterval(updateYear, yearInterval);
 }
 
-// Stop animation
-function stopAnimation() {
-    if (animationInterval) {
-        clearInterval(animationInterval);
+// Stop year animation
+function stopYearAnimation() {
+    if (yearAnimationInterval) {
+        clearInterval(yearAnimationInterval);
+        currentYear = 1850; // Reset to start
     }
 }
 
 // Start animation when DOM is loaded
 if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startAnimation);
+    document.addEventListener('DOMContentLoaded', startYearAnimation);
 } else {
-    startAnimation();
+    startYearAnimation();
 }
-
-// Optional: Pause animation when user leaves the page (performance optimization)
-document.addEventListener('visibilitychange', () => {
-    if (document.hidden) {
-        stopAnimation();
-    } else {
-        startAnimation();
-    }
-});
 
