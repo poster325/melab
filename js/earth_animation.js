@@ -1,9 +1,9 @@
 // Year display animation configuration
 const totalYears = 2100 - 1850; // 250 years
 const totalFrames = 250; // Matching the GIF frame count
-const fps = 15; // Matching GIF fps
-const animationDuration = (totalFrames / fps) * 1000; // Total animation time in ms
-const yearInterval = animationDuration / totalYears; // Time per year update
+const frameDuration = 60; // 0.06 seconds = 60ms per frame
+const animationDuration = totalFrames * frameDuration; // Total animation time in ms (15 seconds)
+const yearInterval = frameDuration; // Update year every frame (60ms)
 const fadeOutDuration = 1000; // 1 second fade out
 const waitDuration = 1000; // 1 second wait
 const fadeInDuration = 1000; // 1 second fade in
@@ -118,10 +118,26 @@ function stopYearAnimation() {
     }
 }
 
-// Start animation when DOM is loaded
-if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', startYearAnimation);
-} else {
+// Start animation with fade in when DOM is loaded
+async function initAnimation() {
+    // Set initial opacity to 0
+    earthImage.style.opacity = '0';
+    earthDate.style.opacity = '0';
+    
+    // Reset to start
+    currentYear = 1850;
+    earthDate.textContent = getYearLabel(currentYear);
+    
+    // Fade in
+    await fadeIn();
+    
+    // Start year animation
     startYearAnimation();
+}
+
+if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initAnimation);
+} else {
+    initAnimation();
 }
 

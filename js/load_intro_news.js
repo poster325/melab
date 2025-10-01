@@ -1,4 +1,4 @@
-const response = await fetch('/data/Web 1de9bb83ec3b80b6a257e12869803932/News acdaa45f52dd43c09e2773b1e2070fd6.csv')
+const response = await fetch('./data/news/News acdaa45f52dd43c09e2773b1e2070fd6.csv')
 if (!response.ok) {
     throw new Error('error')
 }
@@ -13,7 +13,7 @@ for(let i=0; i<3; i++){
 
     const title = data["Title"];
     const time = data["Time"];
-    const image = "data/" + data["Title Image"];
+    const image = "./data/news/" + data["Title Image"];
     const location = data["Location"];
     let link = data["URL"];
 
@@ -191,7 +191,7 @@ async function loadNewsMD(filepath, use_regex = false) {
       }
     }
     if (filepath) {
-        const response = await fetch('/data/' + filepath)
+        const response = await fetch('./data/news/' + filepath)
         if (!response.ok) {
             throw new Error('error')
         }
