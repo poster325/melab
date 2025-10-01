@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="/css/basic.css" />
+    <!-- <link rel="stylesheet" href="/css/memberstyles.css" /> -->
+    <link rel="stylesheet" href="/css/memberdata.css" />
+
+    <title>Meta Earth Lab</title>
+  </head>
+  <body>
+    
+    <!--  HEADER  -->
+    <header class="header" id="header">
+
+      <!-- NAVIGATION CONTAINER -->
+      <div class="header_container">
+
+        <!-- NAVIGATION ICON -->
+        <a class="header_icon" href="/index.html">
+          <img class="lab_icon" src="/assets/lab_icon.svg" alt="meta" />
+          <div class="lab_name">Meta Earth Lab</div>
+        </a>
+
+        <!-- NAVIGATION MENU -->
+        <div class="header_nav" id="nav-menu">
+          <a class="nav_item hover_dim"
+            href="/index.html"
+          >
+            <i class="uil uil-estate nav__icon font-bold"></i> Home
+          </a>
+          <a class="nav_item hover_dim"
+            href="./news.html"
+          >
+            <i class="uil uil-file nav__icon"></i> News
+          </a>
+          <a class="nav_item hover_dim"
+            href="./people.html"
+          >
+            <i class="uil uil-users-alt nav__icon"></i> People
+          </a>
+          <a class="nav_item hover_dim"
+            href="./publications.html"
+          >
+            <i class="uil uil-file nav__icon"></i> Publications
+          </a>
+          <a class="nav_item hover_dim"
+            href="./works.html"
+          >
+            <i class="uil uil-file nav__icon"></i> Works
+          </a>
+          <a class="nav_item hover_dim"
+            href="./contacts.html"
+          >
+            <i class="uil uil-info-circle nav__icon"></i> Contact
+          </a>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!--  MAIN  -->
+    
+    <main class="main flex" style="margin-top: calc(52px + 64px);">
+      <div style="width: 100%; max-width: 1128px; height: calc(100%); position: fixed; display: flex; flex-direction: row; justify-content: space-between; gap: 64px; margin-bottom: calc(32px + 64px);">
+        <div id="profile_type_list" style="width: 100%; max-width: 1128px; display: flex; flex-direction: column; align-items: center; gap: 96px; overflow: scroll;">
+        
+        </div>
+        <div style="flex: 1; overflow: scroll;">
+          <section id="profile-info" style="width: 100%; margin-bottom: 32px">
+            
+          </section>
+          <section id="main-info" style="width: auto; margin-bottom: 256px">
+            <!-- Member data will be injected here -->
+          </section>
+        </div>
+        
+      </div>
+    </main>
+
+    <!--  FOOTER  -->
+    <footer class="footer">
+      &#169; Meta Earth Lab. All rights reserved
+    </footer>
+
+    <script type="module" src="/js/load_people.js"></script>
+  </body>
+
+</html>

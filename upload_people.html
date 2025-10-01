@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+
+        <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet"
+        />
+
+        <!--  CSS  -->
+        <link rel="stylesheet" href="/css/basic.css" />
+
+        <title>Meta Earth Lab</title>
+    </head>
+
+    <body>
+        
+        <!--  HEADER  -->
+        <header class="header" id="header">
+
+        <!-- NAVIGATION CONTAINER -->
+        <div class="header_container">
+
+            <!-- NAVIGATION MENU -->
+            <div class="header_nav" id="nav-menu">
+            <a class="nav_item hover_dim"
+                href="./upload_news.html"
+            >
+                <i class="uil uil-file nav__icon"></i> News
+            </a>
+            <a class="nav_item hover_dim"
+                href="./upload_people.html"
+            >
+                <i class="uil uil-users-alt nav__icon"></i> People
+            </a>
+            <a class="nav_item hover_dim"
+                href="./upload_publication.html"
+            >
+                <i class="uil uil-file nav__icon"></i> Publications
+            </a>
+            </div>
+
+        </div>
+
+        </header>
+
+        <!--  MAIN  -->
+        <main class="main" style="margin-top: calc(52px + 64px); margin-bottom: calc(64px);">
+            <div id="news" style="width: 100%; max-width: 1128px; display: flex; flex-direction: column; gap: 24px;">
+                <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+                    <div style="width: 100%; display: flex; flex-direction: column; gap: 0px;">
+                        <label for="name">Name</label>
+                        <label for="name" style="font-size: 12px; color: #D9D9D9;">ex. FirstName GivenName</label>
+                    </div>
+                    <input type="text" id="name" placeholder="name">
+                </div>
+                <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+                    <label for="image">Image</label>
+                    <img id="img" style="max-width: 1920px; max-height: 1080px; object-fit: contain;">
+                    <input type="file" id="image" placeholder="image" accept="image/*">
+                </div>
+                <div style="width: 100%; display: flex; flex-direction: row; gap: 4px;">
+                    <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+                            <div style="width: 100%; display: flex; flex-direction: column; gap: 0px;">
+                                <label for="position">Position</label>
+                                <label for="position" style="font-size: 12px; color: #D9D9D9;">ex. Associate Professor, Undergraduate, ...</label>
+                            </div>
+                            <input type="text" id="position" placeholder="position">
+                    </div>
+                    <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+                        <div style="width: 100%; display: flex; flex-direction: column; gap: 0px;">
+                            <label for="email">Email</label>
+                            <label for="email" style="font-size: 12px; color: #D9D9D9;">ex. yourid@gmail.com</label>
+                        </div>
+                        <input type="text" id="email" placeholder="email">
+                    </div>
+                    <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+                        <div style="width: 100%; display: flex; flex-direction: column; gap: 0px;">
+                            <label for="phone">Phone</label>
+                            <label for="phone" style="font-size: 12px; color: #D9D9D9;">ex. 82&#41; 10-3408-0122</label>
+                        </div>
+                        <input type="text" id="phone" placeholder="phone">
+                    </div>
+                </div>
+                <input type="button" id="submit" value="Submit" style="height: 32px;"></input>
+            </div>
+        </main>
+
+
+        <!--  FOOTER  -->
+        <footer class="footer">
+        &#169; Meta Earth Lab. All rights reserved
+        </footer>
+
+        <script type="module" src="/js/upload_people.js"></script>
+    </body>
+
+</html>

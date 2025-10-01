@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8" />
+
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!--  CSS  -->
+    <link rel="stylesheet" href="/css/basic.css" />
+
+    <title>Meta Earth Lab</title>
+  </head>
+
+  <body>
+    
+    <!--  HEADER  -->
+    <header class="header" id="header">
+
+      <!-- NAVIGATION CONTAINER -->
+      <div class="header_container">
+
+        <!-- NAVIGATION MENU -->
+        <div class="header_nav" id="nav-menu">
+          <a class="nav_item hover_dim"
+            href="./upload_news.html"
+          >
+            <i class="uil uil-file nav__icon"></i> News
+          </a>
+          <a class="nav_item hover_dim"
+            href="./upload_people.html"
+          >
+            <i class="uil uil-users-alt nav__icon"></i> People
+          </a>
+          <a class="nav_item hover_dim"
+            href="./upload_publication.html"
+          >
+            <i class="uil uil-file nav__icon"></i> Publications
+          </a>
+        </div>
+
+      </div>
+
+    </header>
+
+    <!--  MAIN  -->
+    <main class="main" style="margin-top: calc(52px + 64px); margin-bottom: calc(64px);">
+      <div id="news" style="width: 100%; max-width: 1128px; display: flex; flex-direction: column; gap: 24px;">
+        <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+          <label for="title">Title</label>
+          <input type="text" id="title" placeholder="title">
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+          <label for="image">Image</label>
+          <img id="img" style="max-width: 1920px; max-height: 1080px; object-fit: contain;">
+          <input type="file" id="image" placeholder="image" accept="image/*">
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+          <label for="contents">Contents</label>
+          <input type="text" id="contents" placeholder="contents" style="min-height: 256px;">
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: row; gap: 4px;">
+          <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+            <div style="width: 100%; display: flex; flex-direction: column; gap: 0px;">
+              <label for="location">Location</label>
+              <label for="location" style="font-size: 12px; color: #D9D9D9;">ex. Goseong, Sokcho</label>
+            </div>
+            <input type="text" id="location" placeholder="location">
+          </div>
+          <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+            <div style="width: 100%; display: flex; flex-direction: column; gap: 0px;">
+              <label for="datetime">Datetime</label>
+              <label for="datetime" style="font-size: 12px; color: #D9D9D9;">ex. 2023/5/24-2023/5/27</label>
+            </div>
+            
+            <input type="text" id="datetime" placeholder="datetime">
+          </div>
+        </div>
+        <div style="width: 100%; display: flex; flex-direction: column; gap: 4px;">
+          <label for="url">Url</label>
+          <input type="text" id="url" placeholder="url">
+        </div>
+        <input type="button" id="submit" value="Submit" style="height: 32px;"></input>
+      </div>
+    </main>
+
+
+    <!--  FOOTER  -->
+    <footer class="footer">
+      &#169; Meta Earth Lab. All rights reserved
+    </footer>
+
+    <script type="module" src="/js/upload_news.js"></script>
+  </body>
+
+</html>

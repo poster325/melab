@@ -1,0 +1,2226 @@
+{
+  "Hyungjun Kim": {
+    "Campus": "DJ/DK",
+    "Room": "N5#2234",
+    "Position": "Professor",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Hyungjun_Kim.jpg",
+    "year": "-",
+    "Fullname": "Hyngjun Kim",
+    "name": "H Kim",
+    "Nationality": "Korea",
+    "KAIST Email": "hyungjun.kim@kaist.ac.kr",
+    "Alternative E-mail": "hyungjun@gmail.com",
+    "Phone number": "",
+    "Background": "Civil and Environmental Engineering",
+    "ResearchTheme": "Climate Change, Global Hydrology",
+    "education": {
+      "bachelor": {
+        "university": "Yonsei University, Atmospheric Sciences"
+      },
+      "master": {
+        "university": "Yonsei University, Atmospheric Sciences"
+      },
+      "phd": {
+        "university": "University of Tokyo, Civil Engineering"
+      }
+    },
+    "publications": [
+      {
+        "title": "Calibrating global hydrological models with GRACE TWS: does river storage matter?",
+        "authors": [
+          "T Trautmann",
+          "S Koirala",
+          "A Guentner",
+          "H Kim",
+          "M Jung"
+        ],
+        "journal": "Environmental Research Communications",
+        "volume": "5",
+        "issue": "8",
+        "article_number": "081005",
+        "year": "2023",
+        "citations": "1",
+        "link": "https://iopscience.iop.org/article/10.1088/2515-7620/acece5/pdf"
+      },
+      {
+        "title": "Irrigation in the Earth system",
+        "authors": [
+          "S McDermid",
+          "M Nocco",
+          "P Lawston-Parker",
+          "J Keune",
+          "H Kim",
+          "Y Pokhrel",
+          "M Jain"
+        ],
+        "journal": "Nature Reviews Earth & Environment",
+        "volume": "4",
+        "issue": "7",
+        "pages": "435-453",
+        "year": "2023",
+        "citations": "67",
+        "link": "https://www.nature.com/articles/s43017-023-00438-5"
+      },
+      {
+        "title": "The Global/Regional Integrated Model System (GRIMs): an Update and Seasonal Evaluation",
+        "authors": [
+          "MS Koo",
+          "K Song",
+          "JEE Kim",
+          "SW Son",
+          "EC Chang",
+          "JH Jeong",
+          "H Kim"
+        ],
+        "journal": "Asia-Pacific Journal of Atmospheric Sciences",
+        "volume": "59",
+        "issue": "2",
+        "pages": "113-132",
+        "year": "2023",
+        "citations": "3",
+        "link": "https://link.springer.com/article/10.1007/s13143-022-00297-y"
+      },
+
+      {
+        "title": "Multi-task learning for simultaneous retrievals of passive microwave precipitation estimates and rain/no-rain classification",
+        "authors": ["T Bannai", "H Xu", "N Utsumi", "E Koo", "K Lu", "H Kim"],
+        "journal": "Geophysical Research Letters",
+        "volume": "50",
+        "issue": "7",
+        "article_number": "e2022GL102283",
+        "year": "2023",
+        "citations": "3",
+        "link": "https://agupubs.onlinelibrary.wiley.com/doi/pdf/10.1029/2022GL102283"
+      },
+      {
+        "title": "TOWARD A GLOBAL-SCALE ESTIMATION OF WATER RESOURCES WITH A COUPLED MODEL FRAMEWORK OF HYDRO-AND THERMODY-NAMICS IN RIVERS AND LAKES",
+        "authors": ["D Tokuda", "H Kim", "D Yamazaki", "T Oki"],
+        "journal": "Journal of JSCE",
+        "volume": "11",
+        "issue": "1",
+        "article_number": "23-00116",
+        "year": "2023",
+        "link": "https://www.jstage.jst.go.jp/article/journalofjsce/11/1/11_23-00116/_pdf"
+      },
+      {
+        "title": "Emergent constraints on future precipitation changes",
+        "authors": ["H Shiogama", "M Watanabe", "H Kim", "N Hirota"],
+        "journal": "Nature",
+        "volume": "602",
+        "issue": "7898",
+        "pages": "612-616",
+        "year": "2022",
+        "citations": "53",
+        "link": "https://www.nature.com/articles/s41586-021-04310-8"
+      },
+
+
+      {
+        "title": "Detected Impact of Human-induced Global Warming on Tropical Cyclone Heavy Rainfall",
+        "authors": [
+            "N Utsumi",
+            "H Kim"
+        ],
+        "code": "NH42A-01",
+        "year": 2022,
+        "journal": "AGU Fall Meeting Abstracts 2022",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Changes in the Neutralizing Distance of Thermal Pollution Caused by Thermal Power Plants in Warmer Climate Scenarios",
+        "authors": [
+            "K Otta",
+            "D Tokuda",
+            "H Kim",
+            "T Oki"
+        ],
+        "code": "GC42N-0886",
+        "year": 2022,
+        "journal": "AGU Fall Meeting Abstracts 2022",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Assessing the Impact of Economic Development on Domestic Water Demand and Its Economic Value on the Global Scale",
+        "authors": [
+            "S Afraz",
+            "H Kim",
+            "T Oki"
+        ],
+        "code": "H25G-06",
+        "year": 2022,
+        "journal": "AGU Fall Meeting Abstracts 2022",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Assessment of Changes in Global Domestic Water Use and Economic Value",
+        "authors": [
+            "S Afraz",
+            "H Kim",
+            "T Oki"
+        ],
+        "year": 2022,
+        "journal": "Authorea Preprints",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Summertime Rossby waves in climate models: Substantial biases in surface imprint associated with small biases in upper-level circulation",
+        "authors": [
+            "F Luo",
+            "F Selten",
+            "K Wehrli",
+            "K Kornhuber",
+            "P Le Sager",
+            "W May",
+            "T Reerink"
+        ],
+        "journal": "Weather and Climate Dynamics",
+        "volume": 3,
+        "issue": 3,
+        "pages": "905-935",
+        "year": 2022
+    },
+    {
+        "title": "The timing of unprecedented hydrological drought under climate change",
+        "authors": [
+            "Y Satoh",
+            "K Yoshimura",
+            "Y Pokhrel",
+            "H Kim",
+            "H Shiogama",
+            "T Yokohata"
+        ],
+        "journal": "Nature Communications",
+        "volume": 13,
+        "issue": 1,
+        "pages": "3287",
+        "year": 2022
+    },
+    {
+        "title": "Implications of river storage for integrating GRACE TWS observations into a global hydrological model",
+        "authors": [
+            "T Trautmann",
+            "S Koirala",
+            "A G\u00fcntner",
+            "H Kim",
+            "M Jung"
+        ],
+        "code": "EGU22-7708",
+        "year": 2022,
+        "journal": "EGU General Assembly Conference Abstracts",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Observed influence of anthropogenic climate change on tropical cyclone heavy rainfall",
+        "authors": [
+            "N Utsumi",
+            "H Kim"
+        ],
+        "journal": "Nature Climate Change",
+        "volume": 12,
+        "issue": 5,
+        "pages": "436-440",
+        "year": 2022
+    },
+    {
+        "title": "Observational constraints on the uncertainties of the future precipitation change projections",
+        "authors": [
+            "H Shiogama",
+            "M Watanabe",
+            "H Kim",
+            "N Hirota"
+        ],
+        "code": "EGU22-6751",
+        "year": 2022,
+        "journal": "EGU General Assembly Conference Abstracts",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Assessing the variability of soil temperatures in Land Surface Models using outputs from the Soil Parameter Model Intercomparison Project (SP-MIP)",
+        "authors": [
+            "A Verhoef",
+            "Y Zeng",
+            "M Cuntz",
+            "L Gudmundsson",
+            "S Thober",
+            "PC McGuire"
+        ],
+        "year": 2022,
+        "journal": "EGU22",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+    {
+        "title": "Human footprint on the global hydrological cycles",
+        "authors": [
+            "T Oki",
+            "N Hanasaki",
+            "H Kim",
+            "Q Guo",
+            "D Tokuda"
+        ],
+        "year": 2022,
+        "journal": "IAHS2022",
+        "volume": null,
+        "issue": null,
+        "pages": null
+    },
+
+
+      
+
+      {
+        "title": "GMD perspective: The quest to improve the evaluation of groundwater representation in continental-to global-scale models",
+        "authors": [
+          "T Gleeson",
+          "T Wagener",
+          "P Döll",
+          "SC Zipper",
+          "C West",
+          "Y Wada",
+          "R Taylor"
+        ],
+        "journal": "Geoscientific Model Development",
+        "volume": "14",
+        "issue": "12",
+        "pages": "7545-7571",
+        "year": "2021",
+        "citations": "54",
+        "link": "https://gmd.copernicus.org/articles/14/7545/2021/gmd-14-7545-2021.html"
+      },
+      {
+        "title": "Midlatitude mixed-phase stratocumulus clouds and their interactions with aerosols: how ice processes affect microphysical, dynamic, and thermodynamic development in those clouds",
+        "authors": [
+          "SS Lee",
+          "KJ Ha",
+          "MG Manoj",
+          "M Kamruzzaman",
+          "H Kim",
+          "N Utsumi",
+          "Y Zheng"
+        ],
+        "journal": "Atmospheric Chemistry and Physics",
+        "volume": "21",
+        "issue": "22",
+        "pages": "16843-16868",
+        "year": "2021",
+        "citations": "9",
+        "link": "https://acp.copernicus.org/articles/21/16843/2021/"
+      },
+      {
+        "title": "Development of a coupled simulation framework representing the lake and river continuum of mass and energy (TCHOIR v1. 0)",
+        "authors": ["D Tokuda", "H Kim", "D Yamazaki", "T Oki"],
+        "journal": "Geoscientific Model Development",
+        "volume": "14",
+        "issue": "9",
+        "pages": "5669-5693",
+        "year": "2021",
+        "citations": "7",
+        "link": "https://gmd.copernicus.org/articles/14/5669/2021/gmd-14-5669-2021.html"
+      },
+      {
+        "title": "Recurrent pattern of extreme fire weather in California",
+        "authors": [
+          "R Son",
+          "SYS Wang",
+          "SH Kim",
+          "H Kim",
+          "JH Jeong",
+          "JH Yoon"
+        ],
+        "journal": "Environmental Research Letters",
+        "volume": "16",
+        "issue": "9",
+        "article_number": "094031",
+        "year": "2021",
+        "citations": "15",
+        "link": "https://iopscience.iop.org/article/10.1088/1748-9326/ac1f44/pdf"
+      },
+      {
+        "title": "Empirical strategy for stretching probability distribution in neural-network-based regression",
+        "authors": ["E Koo", "H Kim"],
+        "journal": "Neural Networks",
+        "volume": "140",
+        "pages": "113-120",
+        "year": "2021",
+        "citations": "11",
+        "link": "https://www.sciencedirect.com/science/article/pii/S0893608021000800"
+      },
+      {
+        "title": "Vapor pressure deficit and sunlight explain seasonality of leaf phenology and photosynthesis across Amazonian evergreen broadleaved forest",
+        "authors": [
+          "X Chen",
+          "P Ciais",
+          "F Maignan",
+          "Y Zhang",
+          "A Bastos",
+          "L Liu",
+          "H Kim",
+          "C Bacour",
+          "L Fan"
+        ],
+        "journal": "Global Biogeochemical Cycles",
+        "volume": "35",
+        "issue": "6",
+        "article_number": "e2020GB006893",
+        "year": "2021",
+        "citations": "50",
+        "link": "https://agupubs.onlinelibrary.wiley.com/doi/pdfdirect/10.1029/2020GB006893"
+      },
+      {
+        "title": "Changes in fire weather climatology under 1.5 C and 2.0 C warming",
+        "authors": [
+          "R Son",
+          "H Kim",
+          "SYS Wang",
+          "JH Jeong",
+          "SH Woo",
+          "JY Jeong",
+          "BD Lee"
+        ],
+        "journal": "Environmental Research Letters",
+        "volume": "16",
+        "issue": "3",
+        "article_number": "034058",
+        "year": "2021",
+        "citations": "20",
+        "link": "https://iopscience.iop.org/article/10.1088/1748-9326/abe675/pdf"
+      },
+      
+        {
+          "title": "Evaluation of Snowfall Detection Performance of-Based Retrieval Products for Finnish Snowfall Cases",
+          "authors": ["N Utsumi", "H Kim", "S Seto"],
+          "journal": "Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)",
+          "year": 2021,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Toward the Global-Scale Estimation of Water Resources with a Coupled Model Framework of-and Thermodynamics in Rivers and Lakes",
+          "authors": ["D Tokuda", "H Kim", "D Yamazaki", "T Oki"],
+          "journal": "Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)",
+          "year": 2021,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Evaluation of precipitation vertical profiles estimated by GPM-era satellite-based passive microwave retrievals",
+          "authors": ["N Utsumi", "FJ Turk", "ZS Haddad", "PE Kirstetter", "H Kim"],
+          "journal": "Journal of Hydrometeorology",
+          "volume": 22,
+          "issue": 1,
+          "pages": "95-112",
+          "year": 2021,
+          "citations": 12,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Scientific and human errors in a snow model intercomparison",
+          "authors": ["CB Menard", "R Essery", "G Krinner", "G Arduini", "P Bartlett", "A Boone", "et al."],
+          "journal": "Bulletin of the American Meteorological Society",
+          "volume": 102,
+          "issue": 1,
+          "pages": "E61-E79",
+          "year": 2021,
+          "citations": 76,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Snow cover duration trends observed at sites and predicted by multiple models",
+          "authors": ["R Essery", "H Kim", "L Wang", "P Bartlett", "A Boone", "C Brutel-Vuilmet", "et al."],
+          "journal": "The Cryosphere",
+          "volume": 14,
+          "issue": 12,
+          "pages": "4687-4698",
+          "year": 2020,
+          "citations": 24,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Author Correction: Observed controls on resilience of groundwater to climate variability in sub-Saharan Africa",
+          "authors": ["MO Cuthbert", "RG Taylor", "G Favreau", "MC Todd", "M Shamsudduha", "et al."],
+          "journal": "Nature",
+          "volume": 588,
+          "issue": 7838,
+          "pages": "E25-E25",
+          "year": 2020,
+          "citations": 1,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Have Land Surface and Carbon Cycle Processes in Earth System Models Improved Over Time?",
+          "authors": ["FM Hoffman", "N Collier", "M Mu", "CE Yang", "C Koven", "DM Lawrence", "et al."],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "B019-0010",
+          "year": 2020,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Characterizing the Variable Land Surface Emissivity for Passive Microwave-Based Precipitation Estimation during the Global Precipitation Measurement (GPM) Era",
+          "authors": ["JJ Turk", "S Ringerud", "Y You", "N Utsumi", "H Kim", "C Peters-Lidard"],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "H208-05",
+          "year": 2020,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Impacts of climate change on global terrestrial water storage and the implications on future droughts",
+          "authors": ["Y Pokhrel", "F Felfelani", "Y Satoh", "J Boulange", "P Burek", "A Gaedeke", "et al."],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "H172-0014",
+          "year": 2020,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Abrupt shift to hotter and drier climate over inner East Asia beyond the tipping point",
+          "authors": ["P Zhang", "JH Jeong", "JH Yoon", "H Kim", "SYS Wang", "HW Linderholm", "K Fang", "et al."],
+          "journal": "Science",
+          "volume": 370,
+          "issue": 6520,
+          "pages": "1095-1099",
+          "year": 2020,
+          "citations": 195,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Global aridity changes due to differences in surface energy and water balance between 1.5°C and 2°C warming",
+          "authors": ["A Takeshima", "H Kim", "H Shiogama", "L Lierhammer", "JF Scinocca", "Ø Seland", "et al."],
+          "journal": "Environmental Research Letters",
+          "volume": 15,
+          "issue": 9,
+          "articleId": "0940a7",
+          "year": 2020,
+          "citations": 25,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "HESS Opinions: Improving the evaluation of groundwater representation in continental to global scale models",
+          "authors": ["T Gleeson", "T Wagener", "P Döll", "SC Zipper", "C West", "Y Wada", "R Taylor", "et al."],
+          "journal": "Hydrology and Earth System Sciences Discussions",
+          "year": 2020,
+          "pages": "1-39",
+          "citations": 28,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Observed changes in dry-season water availability attributed to human-induced climate change",
+          "authors": ["RS Padrón", "L Gudmundsson", "B Decharme", "A Ducharne", "DM Lawrence", "et al."],
+          "journal": "Nature Geoscience",
+          "volume": 13,
+          "issue": 7,
+          "pages": "477-481",
+          "year": 2020,
+          "citations": 208,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Improvement of the irrigation scheme in the ORCHIDEE land surface model and impacts of irrigation on regional water budgets over China",
+          "authors": ["Z Yin", "XH Wang", "C Ottlé", "F Zhou", "M Guimberteau", "J Polcher", "SS Peng", "et al."],
+          "journal": "Journal of Advances in Modeling Earth Systems",
+          "volume": 12,
+          "issue": 4,
+          "articleId": "e2019MS001770",
+          "year": 2020,
+          "citations": 29,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Water governance contribution to water and sanitation access equality in developing countries",
+          "authors": ["T Bayu", "H Kim", "T Oki"],
+          "journal": "Water Resources Research",
+          "volume": 56,
+          "issue": 4,
+          "articleId": "e2019WR025330",
+          "year": 2020,
+          "citations": 97,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Event-to-event intensification of the hydrologic cycle from 1.5°C to a 2°C warmer world",
+          "authors": ["GD Madakumbura", "H Kim", "N Utsumi", "H Shiogama", "EM Fischer", "Ø Seland", "et al."],
+          "journal": "Scientific Reports",
+          "volume": 9,
+          "issue": 1,
+          "articleId": "3483",
+          "year": 2019,
+          "citations": 95,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "State-of-the-art global models underestimate impacts from climate extremes",
+          "authors": ["J Schewe", "SN Gosling", "C Reyer", "F Zhao", "P Ciais", "J Elliott", "L Francois", "et al."],
+          "journal": "Nature Communications",
+          "volume": 10,
+          "articleId": "1005",
+          "year": 2019,
+          "citations": 241,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Observed controls on resilience of groundwater to climate variability in sub-Saharan Africa",
+          "authors": ["MO Cuthbert", "RG Taylor", "G Favreau", "MC Todd", "M Shamsudduha", "et al."],
+          "journal": "Nature",
+          "volume": 572,
+          "issue": 7768,
+          "pages": "230-234",
+          "year": 2019,
+          "citations": 252,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Linkage between regional weather systems and hydrologic cycles over Central America",
+          "authors": ["IGDLT Villarreal", "AEA Umanzor", "N Utsumi", "H Kim"],
+          "journal": "AGU Fall Meeting",
+          "year": 2018,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Advances in Large-Scale Modeling and Remote Sensing of Climate–Hydrology–Human Interactions Toward Sustainable Land–Water Resource Management I",
+          "authors": ["Y Pokhrel", "H Kim", "Y Wada", "Q Tang"],
+          "journal": "AGU Fall Meeting",
+          "year": 2018,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "ESM-SnowMIP: assessing snow models and quantifying snow-related climate feedbacks",
+          "authors": ["G Krinner", "C Derksen", "R Essery", "M Flanner", "S Hagemann", "M Clark", "A Hall", "et al."],
+          "journal": "Geoscientific Model Development",
+          "volume": 11,
+          "issue": 12,
+          "pages": "5027-5049",
+          "year": 2018,
+          "citations": 116,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Development of a bias adjustment method for large ensemble experiment and hydrological applications",
+          "authors": ["S Watanabe", "H Kim", "N Utsumi"],
+          "journal": "AGU Fall Meeting",
+          "year": 2018,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Role of Rivers in Basin-scale Energy Budget and Thermal Discharge to the Arctic Ocean",
+          "authors": ["D Tokuda", "H Kim", "D Yamazaki", "T Oki"],
+          "journal": "AGU Fall Meeting",
+          "year": 2018,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Evaluation of ORCHIDEE-MICT-simulated soil moisture over China and impacts of different atmospheric forcing data",
+          "authors": ["Z Yin", "C Ottlé", "P Ciais", "M Guimberteau", "X Wang", "D Zhu", "F Maignan", "et al."],
+          "journal": "Hydrology and Earth System Sciences",
+          "volume": 22,
+          "issue": 10,
+          "pages": "5463-5484",
+          "year": 2018,
+          "citations": 13,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "State of the climate in 2017",
+          "authors": ["R Abernethy", "SA Ackerman", "R Adler", "AA Encarnación", "LS Aldeco", "et al."],
+          "journal": "Bulletin of the American Meteorological Society",
+          "volume": 99,
+          "issue": 8,
+          "pages": "Si-S310",
+          "year": 2018,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Evapotranspiration simulations in ISIMIP2a—Evaluation of spatio-temporal characteristics with a comprehensive ensemble of independent datasets",
+          "authors": ["R Wartenburger", "SI Seneviratne", "M Hirschi", "J Chang", "P Ciais", "D Deryng", "et al."],
+          "journal": "Environmental Research Letters",
+          "volume": 13,
+          "issue": 7,
+          "articleId": "075001",
+          "year": 2018,
+          "citations": 53,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Worldwide evaluation of mean and extreme runoff from six global-scale hydrological models that account for human impacts",
+          "authors": ["J Zaherpour", "SN Gosling", "N Mount", "HM Schmied", "TIE Veldkamp", "et al."],
+          "journal": "Environmental Research Letters",
+          "volume": 13,
+          "issue": 6,
+          "articleId": "065015",
+          "year": 2018,
+          "citations": 124,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Warm season satellite precipitation biases for different cloud types over western North Pacific",
+          "authors": ["N Utsumi", "H Kim"],
+          "journal": "IEEE Geoscience and Remote Sensing Letters",
+          "volume": 15,
+          "issue": 6,
+          "pages": "808-812",
+          "year": 2018,
+          "citations": 6,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "On the use of the GRACE normal equation of inter-satellite tracking data for estimation of soil moisture and groundwater in Australia",
+          "authors": ["N Tangdamrongsub", "SC Han", "M Decker", "IY Yeo", "H Kim"],
+          "journal": "Hydrology and Earth System Sciences",
+          "volume": 22,
+          "issue": 3,
+          "pages": "1811-1829",
+          "year": 2018,
+          "citations": 34,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Biogeophysical impacts of land‐use change on climate extremes in low‐emission scenarios: results from HAPPI‐Land",
+          "authors": ["AL Hirsch", "BP Guillod", "SI Seneviratne", "U Beyerle", "LR Boysen", "V Brovkin", "et al."],
+          "journal": "Earth's Future",
+          "volume": 6,
+          "issue": 3,
+          "pages": "396-409",
+          "year": 2018,
+          "citations": 47,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "ORCHIDEE-MICT (v8.4.1), a land surface model for the high latitudes: model description and validation",
+          "authors": ["M Guimberteau", "D Zhu", "F Maignan", "Y Huang", "C Yue", "S Dantec-Nédélec", "et al."],
+          "journal": "Geoscientific Model Development",
+          "volume": 11,
+          "issue": 1,
+          "pages": "121-163",
+          "year": 2018,
+          "citations": 190,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Dependency on Network Structure and Information Density of Deep Learning Based River Stage Prediction",
+          "authors": ["D Tokuda", "E Koo", "H Kim"],
+          "journal": "Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)",
+          "year": 2018,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Determinants of Water Temperature in the Rivers Over Low-Latitude Regions",
+          "authors": ["D Tokuda", "H Kim", "D Yamazaki", "T Oki"],
+          "journal": "Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)",
+          "year": 2018,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Evapotranspiration seasonality across the Amazon Basin",
+          "authors": ["EE Maeda", "X Ma", "FH Wagner", "H Kim", "T Oki", "D Eamus", "A Huete"],
+          "journal": "Earth System Dynamics",
+          "volume": 8,
+          "issue": 2,
+          "pages": "439-454",
+          "year": 2017,
+          "citations": 103,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Worldwide evaluation of mean and extreme runoff from six global-scale hydrological models that account for human impacts",
+          "authors": ["J Zaherpour", "SN Gosling", "N Mount", "HM Schmied", "TIE Veldkamp", "et al."],
+          "journal": "Environmental Research Letters",
+          "volume": 13,
+          "issue": 6,
+          "articleId": "065015",
+          "year": 2017,
+          "citations": 124,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Global flood risk under climate change",
+          "authors": ["Y Hirabayashi", "R Mahendran", "S Koirala", "L Konoshima", "D Yamazaki", "et al."],
+          "journal": "Nature Climate Change",
+          "volume": 3,
+          "issue": 9,
+          "pages": "816-821",
+          "year": 2016,
+          "citations": 2795,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Hydrological droughts in the 21st century, hotspots and uncertainties from a global multimodel ensemble experiment",
+          "authors": ["C Prudhomme", "I Giuntoli", "EL Robinson", "DB Clark", "NW Arnell", "R Dankers", "et al."],
+          "journal": "Proceedings of the National Academy of Sciences",
+          "volume": 111,
+          "issue": 9,
+          "pages": "3262-3267",
+          "year": 2016,
+          "citations": 781,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "LS3MIP (v1. 0) contribution to CMIP6: the Land Surface, Snow and Soil moisture Model Intercomparison Project–aims, setup and expected outcome",
+          "authors": ["B Van den Hurk", "H Kim", "G Krinner", "SI Seneviratne", "C Derksen", "T Oki", "et al."],
+          "journal": "Geoscientific Model Development",
+          "volume": 9,
+          "issue": 8,
+          "pages": "2809-2832",
+          "year": 2016,
+          "citations": 157,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Biogeophysical impacts of land‐use change on climate extremes in low‐emission scenarios: results from HAPPI‐Land",
+          "authors": ["AL Hirsch", "BP Guillod", "SI Seneviratne", "U Beyerle", "LR Boysen", "V Brovkin", "et al."],
+          "journal": "Earth's Future",
+          "volume": 6,
+          "issue": 3,
+          "pages": "396-409",
+          "year": 2016,
+          "citations": 47,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Simulating the Impacts of Climate Extremes Across Sectors: The Case of the 2003 European Heat Wave",
+          "authors": ["J Schewe", "F Zhao", "C Reyer", "L Breuer", "M Coll", "D Deryng", "et al."],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "GC13D-0805",
+          "year": 2017,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "A CENTURY-LONG GLOBAL OFFLINE SIMULATION TOWARD LAND SURFACE, SNOW, SOIL-MOISTURE MODEL INTERCOMPARISON PROJECT (LS3MIP)",
+          "authors": ["Y Onuma", "H Kim", "Kei Yoshimura", "T Nitta", "R Oishi", "K Takata"],
+          "journal": "土木学会論文集 B1 (水工学)",
+          "volume": 74,
+          "issue": 5,
+          "pages": "43-48",
+          "year": 2016,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Comparison Study on Parameters Related to Forest Structure to Construct a Global Three-Dimensional Radiative Transfer Scheme",
+          "authors": ["H Kamiya", "K Oki", "H Kim", "H Kobayashi"],
+          "journal": "Journal of Japan Society of Civil Engineers, Ser. B1 (Hydraulic Engineering)",
+          "year": 2016,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Systematic Differences in Satellite Precipitation Products Associated with Cloud Types over Western North Pacific",
+          "authors": ["N Utsumi", "H Kim"],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "H34B-08",
+          "year": 2017,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "The pilot phase of the global soil wetness project phase 3",
+          "authors": ["H Kim", "T Oki"],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "GC24B-05",
+          "year": 2015,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Simulating the Impacts of Climate Extremes Across Sectors: The Case of the 2003 European Heat Wave",
+          "authors": ["J Schewe", "F Zhao", "C Reyer", "L Breuer", "M Coll", "D Deryng", "et al."],
+          "journal": "AGU Fall Meeting Abstracts",
+          "articleId": "GC13D-0805",
+          "year": 2015,
+          "publicationType": "Conference"
+        },
+        {
+          "title": "Evapotranspiration simulations in ISIMIP2a—Evaluation of spatio-temporal characteristics with a comprehensive ensemble of independent datasets",
+          "authors": ["R Wartenburger", "SI Seneviratne", "M Hirschi", "J Chang", "P Ciais", "D Deryng", "et al."],
+          "journal": "Environmental Research Letters",
+          "volume": 13,
+          "issue": 7,
+          "articleId": "075001",
+          "year": 2016,
+          "citations": 53,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Global flood risk under climate change",
+          "authors": ["Y Hirabayashi", "R Mahendran", "S Koirala", "L Konoshima", "D Yamazaki", "et al."],
+          "journal": "Nature Climate Change",
+          "volume": 3,
+          "issue": 9,
+          "pages": "816-821",
+          "year": 2013,
+          "citations": 2795,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "Hydrological droughts in the 21st century, hotspots and uncertainties from a global multimodel ensemble experiment",
+          "authors": ["C Prudhomme", "I Giuntoli", "EL Robinson", "DB Clark", "NW Arnell", "R Dankers", "et al."],
+          "journal": "Proceedings of the National Academy of Sciences",
+          "volume": 111,
+          "issue": 9,
+          "pages": "3262-3267",
+          "year": 2014,
+          "citations": 781,
+          "publicationType": "Journal"
+        },
+        {
+          "title": "How climate change will exacerbate global water scarcity",
+          "authors": ["J Schewe", "J Heinke", "D Gerten", "I Haddeland", "N Arnell", "D Clark", "R Dankers", "et al."],
+          "journal": "Proceedings of the National Academy of Sciences",
+          "volume": 111,
+          "issue": 9,
+          "pages": "3245-3250",
+          "year": 2014,
+          "citations": 1881,
+          "publicationType": "Journal"
+        }
+      
+      
+     
+    ],
+    "hasPublished": true,
+    "scholar": "https://scholar.google.com/citations?user=9--3oCwAAAAJ&hl=en"
+  },
+  "Yusuke Satoh": {
+    "Campus": "DJ",
+    "Room": "N5#2261-A",
+    "Position": "Research Associate Professor",
+    "image": "https://futures.kaist.ac.kr/upload/184/20221222140054_ca1daa1b.jpg",
+    "year": "-",
+    "Fullname": "Yusuke Satoh",
+    "name": "Y Satoh",
+    "Nationality": "Japan",
+    "KAIST Email": "yusuke.satoh@kaist.ac.kr",
+    "Alternative E-mail": "yusuke.s.61@gmail.com",
+    "Phone number": "010-3162-4025",
+    "Background": "Global Hydrology, Civil Engineering",
+    "ResearchTheme": "Irrigation in the Earth system, Regional high-res hydrological simulation over the Korean domain, Climate impact assessments",
+    "education": {
+      "bachelor": {
+        "university": "Hokkaido University, Socio-Environmental Engineering,"
+      },
+      "master": {
+        "university": "University of Tokyo, Civil Engineering"
+      },
+      "phd": {
+        "university": "University of Tokyo, Civil Engineering"
+      }
+    },
+    "publications": [
+      {
+        "title": "Concurrent drought threaten wheat and maize production and widen crop yield gaps in the future",
+        "authors": [
+          "M Hou",
+          "Y Li",
+          "A Biswas",
+          "X Chen",
+          "L Xie",
+          "D Liu",
+          "L Li",
+          "H Feng",
+          "S Wu",
+          "Y Satoh"
+        ],
+        "journal": "Agricultural Systems",
+        "volume": "220",
+        "article_number": "104056",
+        "year": "2024",
+        "citations": "1"
+      },
+      {
+        "title": "Deep dive into hydrologic simulations at global scale: harnessing the power of deep learning and physics-informed differentiable models (HBV-globe1.0-hydroDL)",
+        "authors": [
+          "D Feng",
+          "H Beck",
+          "J de Bruijn",
+          "RK Sahu",
+          "Y Satoh",
+          "Y Wada",
+          "J Liu",
+          "M Pan"
+        ],
+        "journal": "Geoscientific Model Development",
+        "volume": "17",
+        "issue": "18",
+        "pages": "7181-7198",
+        "year": "2024"
+      },
+      {
+        "title": "Regional variation in the role of humidity on city-level heat-related mortality",
+        "authors": [
+          "Q Guo",
+          "MN Mistry",
+          "X Zhou",
+          "G Zhao",
+          "K Kino",
+          "B Wen",
+          "K Yoshimura",
+          "Y Satoh"
+        ],
+        "journal": "PNAS nexus",
+        "volume": "3",
+        "issue": "8",
+        "pages": "pgae290",
+        "year": "2024"
+      },
+      {
+        "title": "Global hydrological models continue to overestimate river discharge",
+        "authors": [
+          "S Heinicke",
+          "Y Satoh",
+          "J Volkholz",
+          "J Schewe",
+          "SN Gosling",
+          "H Müller Schmied"
+        ],
+        "journal": "Environmental Research Letters",
+        "year": "2024"
+      },
+      {
+        "title": "Graphical representation of global water models",
+        "authors": [
+          "H Müller Schmied",
+          "Y Satoh",
+          "SN Gosling",
+          "M Garnsworthy",
+          "L Müller",
+          "CE Telteu"
+        ],
+        "journal": "EGUsphere",
+        "volume": "2024",
+        "issue": "1",
+        "pages": "1-51",
+        "year": "2024"
+      },
+      {
+        "title": "MESSAGEix-GLOBIOM nexus module: integrating water sector and climate impacts",
+        "authors": [
+          "M Awais",
+          "A Vinca",
+          "E Byers",
+          "Y Satoh",
+          "S Frank",
+          "O Fricko",
+          "E Boere",
+          "P Burek"
+        ],
+        "journal": "Geoscientific Model Development",
+        "volume": "17",
+        "issue": "6",
+        "pages": "2447-2469",
+        "year": "2024",
+        "citations": "3"
+      },
+      {
+        "title": "Streamflow and soil moisture shift far beyond pre-industrial conditions globally–planetary boundary for freshwater change transgressed",
+        "authors": [
+          "M Porkka",
+          "V Virkki",
+          "L Wang-Erlandsson",
+          "D Gerten",
+          "T Gleeson",
+          "C Mohan"
+        ],
+        "journal": "Nature Water",
+        "volume": "2",
+        "pages": "262-273",
+        "year": "2024",
+        "citations": "1"
+      },
+      {
+        "title": "Notable shifts beyond pre-industrial streamflow and soil moisture conditions transgress the planetary boundary for freshwater change",
+        "authors": [
+          "M Porkka",
+          "V Virkki",
+          "Y Satoh",
+          "L Wang-Erlandsson",
+          "D Gerten",
+          "T Gleeson",
+          "C Mohan"
+        ],
+        "journal": "Nature Water",
+        "volume": "2",
+        "issue": "3",
+        "pages": "262-273",
+        "year": "2024",
+        "citations": "6"
+      },
+      {
+        "title": "Functional relationships reveal differences in the water cycle representation of global water models",
+        "authors": [
+          "S Gnann",
+          "R Reinecke",
+          "L Stein",
+          "Y Wada",
+          "W Thiery",
+          "H Müller Schmied",
+          "Y Satoh"
+        ],
+        "journal": "Nature Water",
+        "volume": "1",
+        "issue": "12",
+        "pages": "1079-1090",
+        "year": "2023",
+        "citations": "14"
+      },
+      {
+        "title": "Author Correction: Irrigation in the Earth system",
+        "authors": [
+          "S McDermid",
+          "M Nocco",
+          "P Lawston-Parker",
+          "Y Satoh",
+          "J Keune",
+          "Y Pokhrel",
+          "M Jain"
+        ],
+        "journal": "Nature Reviews Earth & Environment",
+        "volume": "4",
+        "issue": "11",
+        "pages": "804-804",
+        "year": "2023",
+        "citations": "8"
+      },
+      {
+        "title": "Deep dive into global hydrologic simulations: Harnessing the power of deep learning and physics-informed differentiable models (δHBV-globe1. 0-hydroDL)",
+        "authors": [
+          "D Feng",
+          "H Beck",
+          "J de Bruijn",
+          "RK Sahu",
+          "Y Satoh",
+          "Y Wada",
+          "J Liu",
+          "M Pan"
+        ],
+        "journal": "Geoscientific Model Development Discussions",
+        "year": "2023",
+        "pages": "1-23",
+        "citations": "5"
+      }
+    ],
+    "hasPublished": true,
+    "scholar": "https://scholar.google.com/citations?user=KIQe_HEAAAAJ&hl=ja"
+  },
+
+  "Abubaker Omer": {
+    "Campus": "DJ",
+    "Room": "N5#2261-A",
+    "Position": "Post-doctoral Researcher",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Omer_images.jpg",
+    "year": "-",
+    "name": "A Omer",
+    "Fullname": "Abubaker Omer",
+    "Nationality": "Sudan",
+    "KAIST Email": "a_omer@kaist.ac.kr",
+    "Alternative E-mail": "bakriomer87@gmail.com",
+    "Phone number": "",
+    "Background": "",
+    "ResearchTheme": "Hydrological Extremes, Climate change adaptation, System Dynamic Modeling, Transboundary Water Management",
+    "education": {
+      "bachelor": {
+        "university": "Sudan University for Sciences and Technology, Water Resources Engineering"
+      },
+      "master": {
+        "university": "Hohai University, Hydrology and Water Resources Engineering"
+      },
+      "phd": {
+        "university": "University of Chinese Academy of Sciences, Meteorology"
+      }
+    },
+    "publications": [
+      {
+        "title": "Water scarcity in the Yellow River Basin under future climate change and human activities",
+        "authors": [
+          "A Omer",
+          "NA Elagib",
+          "M Zhuguo",
+          "F Saleem",
+          "A Mohammed"
+        ],
+        "journal": "Science of the Total Environment",
+        "volume": "749",
+        "article_number": "141446",
+        "year": "2020",
+        "citations": "138"
+      },
+      {
+        "title": "Natural and anthropogenic influences on the recent droughts in Yellow River Basin, China",
+        "authors": ["A Omer", "M Zhuguo", "Z Zheng", "F Saleem"],
+        "journal": "Science of the Total Environment",
+        "volume": "704",
+        "article_number": "135428",
+        "year": "2020",
+        "citations": "129"
+      },
+      {
+        "title": "Projected changes in socioeconomic exposure to heatwaves in South Asia under changing climate",
+        "authors": [
+          "I Ullah",
+          "F Saleem",
+          "V Iyakaremye",
+          "J Yin",
+          "X Ma",
+          "S Syed",
+          "S Hina",
+          "TG Asfaw",
+          "A Omer"
+        ],
+        "journal": "Earth's Future",
+        "volume": "10",
+        "issue": "2",
+        "article_number": "e2021EF002240",
+        "year": "2022",
+        "citations": "92"
+      },
+      {
+        "title": "Impacts of climate change under CMIP5 RCP scenarios on the streamflow in the Dinder River and ecosystem habitats in Dinder National Park, Sudan",
+        "authors": ["AK Basheer", "H Lu", "A Omer", "AB Ali", "AMS Abdelgader"],
+        "journal": "Hydrology and Earth System Sciences",
+        "volume": "20",
+        "issue": "4",
+        "pages": "1331-1353",
+        "year": "2016",
+        "citations": "75"
+      },
+      {
+        "title": "Observed changes in seasonal drought characteristics and their possible potential drivers over Pakistan",
+        "authors": [
+          "I Ullah",
+          "X Ma",
+          "J Yin",
+          "F Saleem",
+          "S Syed",
+          "A Omer",
+          "BA Habtemicheal",
+          "M Liu"
+        ],
+        "journal": "International journal of climatology",
+        "volume": "42",
+        "issue": "3",
+        "pages": "1576-1596",
+        "year": "2022",
+        "citations": "70"
+      },
+      {
+        "title": "Regional changes in extreme temperature records over Pakistan and their relation to Pacific variability",
+        "authors": ["F Saleem", "X Zeng", "S Hina", "A Omer"],
+        "journal": "Atmospheric Research",
+        "volume": "250",
+        "article_number": "105407",
+        "year": "2021",
+        "citations": "61"
+      },
+      {
+        "title": "A hydrological perspective on drought risk-assessment in the Yellow River Basin under future anthropogenic activities",
+        "authors": ["A Omer", "M Zhuguo", "X Yuan", "Z Zheng", "F Saleem"],
+        "journal": "Journal of Environmental Management",
+        "volume": "289",
+        "article_number": "112429",
+        "year": "2021",
+        "citations": "39"
+      },
+      {
+        "title": "Spatiotemporal characteristics of meteorological drought variability and trends (1981–2020) over South Asia and the associated large-scale circulation patterns",
+        "authors": [
+          "I Ullah",
+          "X Ma",
+          "J Yin",
+          "A Omer",
+          "BA Habtemicheal",
+          "F Saleem",
+          "V Iyakaremye"
+        ],
+        "journal": "Climate Dynamics",
+        "volume": "60",
+        "issue": "7",
+        "pages": "2261-2284",
+        "year": "2023",
+        "citations": "34"
+      },
+      {
+        "title": "Integrated assessment of the impacts of climate variability and anthropogenic activities on river runoff: a case study in the Hutuo River Basin, China",
+        "authors": ["A Omer", "W Wang", "AK Basheer", "B Yong"],
+        "journal": "Hydrology Research",
+        "volume": "48",
+        "issue": "2",
+        "pages": "416-430",
+        "year": "2017",
+        "citations": "32"
+      },
+      {
+        "title": "Reference evapotranspiration estimation in hyper-arid regions via D-vine copula based-quantile regression and comparison with empirical approaches and machine learning models",
+        "authors": [
+          "M Abdallah",
+          "B Mohammadi",
+          "MAH Zaroug",
+          "A Omer",
+          "M Cheraghalizadeh"
+        ],
+        "journal": "Journal of Hydrology: Regional Studies",
+        "volume": "44",
+        "article_number": "101259",
+        "year": "2022",
+        "citations": "20"
+      },
+      {
+        "title": "Impacts of climate change under CMIP5 RCP scenarios on the streamflow in the Dinder River and ecosystem habitats in Dinder National Park, Sudan.",
+        "authors": ["AK Basheer", "H Lu", "A Omer", "AB Ali", "AMS Abdelgader"],
+        "journal": "Hydrology & Earth System Sciences Discussions",
+        "volume": "12",
+        "issue": "10",
+        "year": "2015",
+        "citations": "19"
+      },
+      {
+        "title": "Projected changes in socioeconomic exposure to heatwaves in South Asia under changing climate; Earth’s Future 10 e2021EF002240",
+        "authors": [
+          "I Ullah",
+          "F Saleem",
+          "V Iyakaremye",
+          "J Yin",
+          "X Ma",
+          "S Syed",
+          "S Hina",
+          "TG Asfaw",
+          "A Omer"
+        ],
+        "journal": "Earth’s Future",
+        "volume": "10",
+        "article_number": "e2021EF002240",
+        "year": "2022",
+        "citations": "8"
+      },
+      {
+        "title": "Transboundary Nile basin dynamics: Land use change, drivers, and hydrological impacts under socioeconomic pathways",
+        "authors": ["A Omer", "X Yuan", "A Gemitzi"],
+        "journal": "Ecological Indicators",
+        "volume": "153",
+        "article_number": "110414",
+        "year": "2023",
+        "citations": "6"
+      },
+      {
+        "title": "Influence of large-scale circulation and interannual modes of climate variability on seasonal drought characteristics over Pakistan",
+        "authors": [
+          "I Ullah",
+          "X Ma",
+          "J Yin",
+          "F Saleem",
+          "S Syed",
+          "A Omer",
+          "BA Habtemicheal"
+        ],
+        "year": "2021",
+        "citations": "2"
+      },
+      {
+        "title": "Toward Holistic Perspective on Dam Efficacy in Transboundary Hydro-Extremes Management",
+        "authors": ["A Omer", "N Elagib", "Y Wada", "Y Pokhrel", "H Kim"],
+        "journal": "Hydrology and Earth System Sciences",
+        "conference": "EGU24",
+        "year": "2024"
+      },
+      {
+        "title": "A D-vine copula-based quantile regression towards merging satellite precipitation products over rugged topography: a case study in the upper Tekeze–Atbara Basin",
+        "authors": [
+          "M Abdallah",
+          "K Zhang",
+          "L Chao",
+          "A Omer",
+          "K Hassaballah",
+          "K Welde Reda"
+        ],
+        "journal": "Hydrology and Earth System Sciences",
+        "volume": "28",
+        "issue": "5",
+        "pages": "1147-1172",
+        "year": "2024"
+      }
+    ],
+    "hasPublished": true,
+    "scholar": "https://scholar.google.ca/citations?user=m0gl_VYAAAAJ&hl=en&oi=ao"
+  },
+
+  "전민종": {
+    "Campus": "DJ/DK",
+    "Room": "N5#2261-A",
+    "Position": "Post-doctoral Researcher",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Youngjoo_Kwon.jpg",
+    "year": "-",
+    "name": "전민종",
+    "Nationality": "Korea",
+    "KAIST Email": "",
+    "Alternative E-mail": "",
+    "Phone number": "",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Kaoru KAKINUMA": {
+    "Campus": "DJ",
+    "Room": "N5#2261-A",
+    "Position": "Post-doctoral Researcher",
+    "image": "",
+    "year": "-",
+    "name": "Kaoru KAKINUMA",
+    "Nationality": "Japan",
+    "KAIST Email": "",
+    "Alternative E-mail": "k.kakinuma0214@gmail.com",
+    "Phone number": "",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Gidon Han": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Gidon_Han.jpg",
+    "year": "(D1)",
+    "name": "Han, G",
+    "Fullname": "Han Gidon",
+    "Nationality": "Korea",
+    "KAIST Email": "dytpahan@kaist.ac.kr",
+    "Alternative E-mail": "dytpahan@gmail.com",
+    "Phone number": "010-6405-5928",
+    "Background": "",
+    "ResearchTheme": "Groundwater modeling, Land surface model, model comparison",
+    "education": {
+      "bachelor": {
+        "university": "Handong Global University, Spatial Environmental System Engineering"
+      },
+      "master": {
+        "university": "Seoul National University, Civil and Environmental Engineering"
+      },
+      "phd": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      }
+    },
+    "publications": [
+      {
+        "title": "Development of an integrated modeling platform for watershed simulation",
+        "authors": ["Nguyen, H. H., & Han, G."],
+        "journal": "Environmental Modelling & Software",
+        "volume": "139",
+        "page": "105014",
+        "year": 2021
+      }
+    ],
+    "hasPublished": true
+  },
+
+  "Shareena Azliani A Aziz": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Photo_Shareena.jpg",
+    "year": "(D1)",
+    "name": "Shareena Azliani A Aziz",
+    "Nationality": "Malaysia",
+    "KAIST Email": "shareena@kaist.ac.kr",
+    "Alternative E-mail": "eenaaziz48@gmail.com",
+    "Phone number": "",
+    "Background": "Civil and Environmental Engineering",
+    "ResearchTheme": "Hydrological modeling; reservoir operation scheme; model comparison; impact assessment; sustainable water, energy, food",
+    "education": {
+      "bachelor": {
+        "university": "Universiti Teknologi Petronas, Civil Engineering"
+      },
+      "master": {
+        "university": "Universiti Putra Malaysia, Civil Engineering"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Jin Pak": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Jin_Pak.jpg",
+    "year": "(D1)",
+    "name": "Jin Pak",
+    "Nationality": "Korea",
+    "KAIST Email": "stitch0461@kaist.ac.kr",
+    "Alternative E-mail": "jinpak0428@gmail.com",
+    "Phone number": "010-8131-2106",
+    "Background": "Environmental Engineering, CCUS",
+    "ResearchTheme": "Climate change; Anthropogenic attribution on hydrological extreme events; hydrodynamic model (CaMa-Flood)",
+    "hasPublished": false
+  },
+  "Hongtak Lee": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Hongtak_Lee.jpg",
+    "year": "(D2)",
+    "name": "Hongtak Lee",
+    "Fullname": "Hongtak Lee",
+    "Nationality": "Korea",
+    "KAIST Email": "leeht@kaist.ac.kr",
+    "Alternative E-mail": "leeht3503@gmail.com",
+    "Phone number": "010-9396-3503",
+    "Background": "Remote Sensing, Earth System Science",
+    "ResearchTheme": "Human land use and its influence; agricultural land use, Crop yield forecast; Remote Sensing and Modeling",
+    "education": {
+      "bachelor": {
+        "university": "Yonsei University, Department of Earth System Sciences"
+      },
+      "master": {
+        "university": "Yonsei University, Department of Earth System Sciences, Remote Sensing Major"
+      },
+      "phd": null
+    },
+    "publications": [
+      {
+        "title": "An Atmospheric Correction Using High Resolution Numerical Weather Prediction Models for Satellite-Borne Single-Channel Mid-Wavelength and Thermal Infrared Imaging Sensors",
+        "journal": "Remote Sensing",
+        "authors": ["Hongtak Lee", "Joong-Sun Won", "Wook Park"],
+        "doi": "https://doi.org/10.3390/rs12050853"
+      }
+    ],
+    "hasPublished": true
+  },
+
+  "Ho Minh Tam Nguyen": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Ho_Minh_Tam_Nguyen.jpg",
+    "year": "(D2)",
+    "name": "Ho Minh Tam Nguyen",
+    "Nationality": "Vietnam",
+    "KAIST Email": "hmtnguyen@kaist.ac.kr",
+    "Alternative E-mail": "nhmtam2311@gmail.com",
+    "Phone number": "010-2812-7947",
+    "Background": "Geodesy and cartography",
+    "ResearchTheme": "Satellite remote sensing, disaster impact assessment, IAM modelling",
+    "education": {
+      "bachelor": {
+        "university": "Ho Chi Minh City University of Natural Resources and Environment"
+      },
+      "master": {
+        "university": "Moscow State University of Geodesy and Cartography"
+      },
+      "phd": "KAIST, Civil and Environmental Engineering"
+    },
+    "publications": [],
+    "hasPublished": true
+  },
+  "Joonyoung Kwak": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Joonyoung_Kwak.jpg",
+    "year": "(D2)",
+    "name": "Joonyoung Kwak",
+    "Nationality": "Korea",
+    "KAIST Email": "jykwak@kaist.ac.kr",
+    "Alternative E-mail": "",
+    "Phone number": "010-2008-8030",
+    "Background": "Atmospheric Science, Environmental Studies",
+    "ResearchTheme": "Climate Change; Aviation; Impact assessment",
+    "education": {
+      "bachelor": {
+        "university": "Yonsei University, Department of Atmospheric Science"
+      },
+      "master": {
+        "university": "Seoul National University, Environmental Studies"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Soonchul Park": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Soonchul_Park.jpg",
+    "year": "(D1)",
+    "name": "Soonchul Park",
+    "Nationality": "Korea",
+    "KAIST Email": "mechpark@kaist.ac.kr",
+    "Alternative E-mail": "",
+    "Phone number": "010-4660-2577",
+    "Background": "",
+    "ResearchTheme": "Energy and Climate change (tentative)",
+    "hasPublished": false
+  },
+  "조성래": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Position": "Doctoral Program",
+    "image": "",
+    "year": "-",
+    "name": "조성래",
+    "Nationality": "Korea",
+    "KAIST Email": "thepol37@kaist.ac.kr",
+    "Alternative E-mail": "thepol37@gmail.com",
+    "Phone number": "",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Charlie Changsub Chang": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Position": "Doctoral Program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Charlie_Changsub_Chang.jpg",
+    "year": "(D1)",
+    "name": "Charlie Changsub Chang",
+    "Nationality": "Korea",
+    "KAIST Email": "changsubchang@kaist.ac.kr",
+    "Alternative E-mail": "changsub.chang@gmail.com",
+    "Phone number": "010-3553-1956",
+    "Background": "Industrial Engineering, Data Science",
+    "ResearchTheme": "Climate change and low data regime; novel infra for climate modeling",
+    "hasPublished": false
+  },
+  "Yang Sumin": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Master's program",
+    "image": "",
+    "year": "(M1)",
+    "name": "Yang Sumin",
+    "Nationality": "Korea",
+    "KAIST Email": "kmin8@kaist.ac.kr",
+    "Alternative E-mail": "zhumin0801@naver.com",
+    "Phone number": "010-3379-1314",
+    "Background": "Chinese language and literature, Economics",
+    "ResearchTheme": "Climate change, Climate risk impact Assessment",
+    "education": {
+      "bachelor": {
+        "university": "Sungkyunkwan University, Chinese language and literature, Economics"
+      },
+      "master": {
+        "university": "KAIST Graduate School of Green Growth & Sustainability"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+
+  "Serin Park": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Position": "Master's program",
+    "image": "",
+    "year": "(M1)",
+    "name": "Serin Park",
+    "Nationality": "Korea",
+    "KAIST E-mail": "srpark333@kaist.ac.kr",
+    "Alternative E-mail": "srpark333@gmail.com",
+    "Phone number": "010-9403-0993",
+    "Background": "Political Science, Anthropology, Economics",
+    "ResearchTheme": "Climate Change Impact Assessment, Climate Governance",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, Department of Chemical and Biomolecular Engineering"
+      },
+      "master": {
+        "university": "KAIST Graduate School of Green Growth & Sustainability"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+
+  "Eunhan Goo": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Eunhan_Goo.jpg",
+    "Year": "M2",
+    "name": "Eunhan Goo",
+    "Nationality": "Korea",
+    "KAIST Email": "geh0616@kaist.ac.kr",
+    "Alternative Email": "kt29885779@gmail.com",
+    "Phone Number": "-",
+    "Background": "Mathematics, Industrial Engineering",
+    "ResearchTheme": "climate model, impact assessment, remote sensing, dynamical system, machine learning",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, Industrial Engineering, Mathematics"
+      },
+      "master": {
+        "university": "KAIST Graduate School of Green Growth & Sustainability"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+
+  "Nazerke Baktygerey": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M2",
+    "name": "Nazerke Baktygerey",
+    "Nationality": "Kazakhstan",
+    "KAIST Email": "nazerkebaktygerey@kaist.ac.kr",
+    "Alternative Email": "nazerkebaktygerey@gmail.com",
+    "Phone Number": "010-9743-5431",
+    "Background": "Land management and cadastre",
+    "ResearchTheme": "Climate change, Impact of agricultural drought on food security: vulnerability evaluation",
+    "education": {
+      "bachelor": {
+        "university": "Yonsei University, Department of Earth System Sciences"
+      },
+      "master": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Somin Park": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Somin_Park.jpg",
+    "Year": "M2",
+    "name": "Somin Park",
+    "Nationality": "Korea",
+    "KAIST Email": "sominlit@kaist.ac.kr",
+    "Alternative Email": "somin4260@gmail.com",
+    "Phone Number": "010-8700-0952",
+    "Background": "",
+    "ResearchTheme": "Land use, Agriculture, Food security, Crop model simulation intercomparison",
+    "hasPublished": false
+  },
+  "Jiwoo Choi": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/1.png",
+    "Year": "M2",
+    "name": "Jiwoo Choi",
+    "Nationality": "Korea",
+    "KAIST Email": "jidn5795@kaist.ac.kr",
+    "Alternative Email": "jiwoovvvv@gmail.com",
+    "Phone Number": "010-3233-2821",
+    "Background": "Architecture",
+    "ResearchTheme": "Climate change, Flood, Carbon Dioxide Removal(CDR) scenario, Hydrodynamic model (CaMa-Flood)",
+    "education": {
+      "bachelor": {
+        "university": "Chungnam National University, Department of Architecture"
+      },
+      "master": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      },
+      "phd": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      }
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Denis Groshev": {
+    "Campus": "DJ",
+    "Room": "-",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Denis_Groshev.jpg",
+    "Year": "M2",
+    "name": "Denis Groshev",
+    "Nationality": "Kazakhstan",
+    "KAIST Email": "grdennis@kaist.ac.kr",
+    "Alternative Email": "denis31082000@gmail.com",
+    "Phone Number": "-",
+    "Background": "",
+    "ResearchTheme": "Canopy Radiative Transfer Model, Satellite Remote Sensing, Surface Energy Balance Simulation",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, Aerospace Engineering"
+      },
+      "master": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      },
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Jin Jeong": {
+    "Campus": "DJ",
+    "Room": "-",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "-",
+    "name": "Jin Jeong",
+    "Nationality": "Korea",
+    "KAIST Email": "tasa2000@kaist.ac.kr",
+    "Alternative Email": "jeongjin2000@gmail.com",
+    "Phone Number": "-",
+    "Background": "",
+    "ResearchTheme": "-",
+    "hasPublished": false
+  },
+  "Yuri Lee": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/%25E1%2584%258B%25E1%2585%25B5%25E1%2584%258B%25E1%2585%25B2%25E1%2584%2585%25E1%2585%25B5.png",
+    "Year": "M1",
+    "name": "Yuri Lee",
+    "Nationality": "Korea",
+    "KAIST Email": "glass@kaist.ac.kr",
+    "Alternative Email": "miclover1114@gmail.com",
+    "Phone Number": "010-2466-8185",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Mihye Choi": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M1",
+    "name": "Mihye Choi",
+    "Nationality": "Korea",
+    "KAIST Email": "jau2n74@kaist.ac.kr",
+    "Alternative Email": "jau2n74@gmail.com",
+    "Phone Number": "010-5315-9645",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Wonkyoung Kim": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M1",
+    "name": "Wonkyoung Kim",
+    "Nationality": "Korea",
+    "KAIST Email": "wonkim10@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "010-7163-4472",
+    "Background": "Economics, Risk Mgt. of Financial industry",
+    "ResearchTheme": "ESG of financial institution, Climate Change, Impact Assessment, AI etc",
+    "hasPublished": false
+  },
+  "Seul GI Lee": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M1",
+    "name": "Seul GI Lee",
+    "Nationality": "Korea",
+    "KAIST Email": "cicicoo@kaist.ac.kr",
+    "Alternative Email": "cicicoo@gmail.com",
+    "Phone Number": "010-2129-5612",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Eunkyoung Bae": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M1",
+    "name": "Eunkyoung Bae",
+    "Nationality": "Korea",
+    "KAIST Email": "enkglove@kaist.ac.kr",
+    "Alternative Email": "enkglove@gmail.com",
+    "Phone Number": "010-2823-4546",
+    "Background": "Nursing, Public health, Biostatistics",
+    "ResearchTheme": "Health Equity related to Climate change, Global health policy",
+    "education": {
+      "bachelor": {
+        "university": "Korea Armed Nursing Academy, Nursing"
+      },
+      "master": {
+        "university": "Graduate school of Public Health of Yonsei University, Biostatistics"
+      },
+      "phd": {
+        "university": "Graduate school of Yonsei University, Nursing"
+      }
+    },
+    "publications": [
+      {
+        "title": "Differences in problem alcohol drinking by military service type among male professional military personnel in South Korea using Military Health Survey data",
+        "journal": "BMJ Open",
+        "doi": "10.1136/bmjopen-2020-045279"
+      },
+      {
+        "title": "Unmet Healthcare Needs and Associated Factors Among Korean Enlisted Soldiers",
+        "journal": "Military Medicine",
+        "doi": "10.1093/milmed/usaa235"
+      },
+      {
+        "title": "Association Between Personal Protective Equipment Use and Injury Occurrence Among the Republic of Korea Armed Forces",
+        "journal": "Military Medicine",
+        "doi": "10.7205/MILMED-D-16-00336"
+      },
+      {
+        "title": "Military Life Experience in North Korea among North Korean Female Defectors",
+        "journal": "Journal of military nursing research",
+        "doi": "10.31148/kjmnr.2023.41.3.01"
+      },
+      {
+        "title": "Analysis of the characteristics of COVID-19 military confirmed cases and the effect of vaccination",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-089073490"
+      },
+      {
+        "title": "The Epidemiologic Characteristics of Military Personnel with COVID-19 in Republic of Korea in 2020",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-088665225"
+      },
+      {
+        "title": "Research Trends of the Articles Published in the Journal of the Korean Military Medicine from 2010 to 2019",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-088665234"
+      },
+      {
+        "title": "A Study on the Body Mass Index and Physique on Some Soldiers",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-088664997"
+      },
+      {
+        "title": "Survey Research for Health Behaviors and Medical Care Service Utilization of Active duty of soldiers (By Using 2015 Military Health Survey)",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-088663758"
+      },
+      {
+        "title": "Survey Research for Health Behaviors and Medical Care Service Utilization of Active duty soldier- By Using 2014 Military Health Survey",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-088663516"
+      },
+      {
+        "title": "The research regarding to the cause of military pneumonia",
+        "journal": "The Journal of the Korean Military Medical Association",
+        "uci": "I410-ECN-151-24-02-088667550"
+      }
+    ],
+    "hasPublished": true,
+    "note": "The research from numbers 5 to 11 is part of an internal military journal. Therefore, the lab may decide to keep it confidential."
+  },
+
+  "Woongrai Kim": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Woongrai_Kim.jpg",
+    "Year": "M2",
+    "name": "Woongrai Kim",
+    "Nationality": "Korea",
+    "KAIST Email": "woong0902@kaist.ac.kr",
+    "Alternative Email": "woong0902@gmail.com",
+    "Phone Number": "010-9019-2709",
+    "Background": "Journalism",
+    "ResearchTheme": "Climate change & Vector-borne diseases, Climate Data Journalism",
+    "education": {
+      "bachelor": {
+        "university": "Korea University, English Literature"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Mingu Kang": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M2",
+    "name": "Mingu Kang",
+    "Nationality": "Korea",
+    "KAIST Email": "vitamin9@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "010-5444-6301",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Kwonpil Chon": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Kwonpil_Chon.jpg",
+    "Year": "M2",
+    "name": "Kwonpil Chon",
+    "Nationality": "Korea",
+    "KAIST Email": "chonkp@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "010-2307-9653",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Woori Choi": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Woori_Choi.jpg",
+    "Year": "M2",
+    "name": "Woori Choi",
+    "Nationality": "Korea",
+    "KAIST Email": "ecowoori@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "010-4489-3547",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Seunghyun Hwang": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M1 (On leave)",
+    "name": "Seunghyun Hwang",
+    "Nationality": "Korea",
+    "KAIST Email": "shhwang725@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "010-3703-7520",
+    "Background": "",
+    "ResearchTheme": "Climate change, climate journalism",
+    "hasPublished": false
+  },
+  "Chaehyuk Han": {
+    "Campus": "DK",
+    "Room": "DK#312",
+    "Program": "Master's program",
+    "image": "",
+    "Year": "M1 (On leave)",
+    "name": "Chaehyuk Han",
+    "Nationality": "Korea",
+    "KAIST Email": "chad1010@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "-",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Nursultan Soodonbekov": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Undergraduated",
+    "image": "https://scontent-ssn1-1.xx.fbcdn.net/v/t39.30808-6/278335609_685737349432871_7047051664003966532_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=127cfc&_nc_ohc=behhExRcsSEQ7kNvgGk6tfx&_nc_ht=scontent-ssn1-1.xx&_nc_gid=AZlEoRvubLcX3gZYvJPG1sN&oh=00_AYBReKVTr1NUmSv5UjSH-OZzHYj3tXLUjvYr8421lySsYg&oe=67015C53",
+    "Year": "U4",
+    "name": "Nursultan Soodonbekov",
+    "Nationality": "Kyrgyzstan",
+    "KAIST Email": "nursultan@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "-",
+    "Background": "Computer Science, Business Technology Management",
+    "ResearchTheme": "Artificial Interlligence & Machine Learning",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, School of Computing"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Taufik Muhamad Yusup": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Undergraduated",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Taufik_Muhamad_Yusup.jpg",
+    "Year": "U4",
+    "name": "Taufik Muhamad Yusup",
+    "Nationality": "Indonesia",
+    "KAIST Email": "taufikmy@kaist.ac.kr",
+    "Alternative Email": "taufikmuhamadyusup@gmail.com",
+    "Phone Number": "010-4802-2705",
+    "Background": "Computer Science, Business Technology Management, Science Technology Policy",
+    "ResearchTheme": "Computational Sustainability, Climate Change AI",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Muhammad Ahmed": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Undergraduated",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Muhammad_Ahmed.jpg",
+    "Year": "U4",
+    "name": "Muhammad Ahmed",
+    "Nationality": "Pakistan",
+    "KAIST Email": "mahmed@kaist.ac.kr",
+    "Alternative Email": "muhammadahmed71e@gmail.com",
+    "Phone Number": "010-2702-5371",
+    "Background": "Civil Engineering, Computer Science",
+    "ResearchTheme": "ML-based Weather Prediction Models, Downscaling",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, Civil and Environmental Engineering, School of Computing"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Azamat Atabayev": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Undergraduated",
+    "image": "",
+    "Year": "U4",
+    "name": "Azamat Atabayev",
+    "Nationality": "Kazakhstan",
+    "KAIST Email": "atabayev@kaist.ac.kr",
+    "Alternative Email": "aza.atabayev@gmail.com",
+    "Phone Number": "-",
+    "Background": "Computer Science, Industrial and Systems Engineering",
+    "ResearchTheme": "Development of coding tools, Remote sensing",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, School of Computing"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Alexandra Suchshenko": {
+    "Campus": "DJ",
+    "Room": "N5#2261-B",
+    "Program": "Undergraduated",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Alexandra_Suchshenko.jpg",
+    "Year": "U4",
+    "name": "Alexandra Suchshenko",
+    "Nationality": "Kazakhstan",
+    "KAIST Email": "alexandra.suchshenko@kaist.ac.kr",
+    "Alternative Email": "sawooooook.as@gmail.com",
+    "Phone Number": "010-9732-4466",
+    "Background": "Aerospace Engineering, Computer Science",
+    "ResearchTheme": "Remote sensing, AI models, Precipitation estimation",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, Civil and Environmental Engineering"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "In So Jung": {
+    "Campus": "DJ/DK",
+    "Room": "N5#2261-B",
+    "Program": "Undergraduated",
+    "image": "",
+    "Year": "U4",
+    "name": "In So Jung",
+    "Nationality": "Korea",
+    "KAIST Email": "sojung816@guest.kaist.ac.kr",
+    "Alternative Email": "insojung816@naver.com",
+    "Phone Number": "-",
+    "Background": "Data Science, Earth science education",
+    "ResearchTheme": "Groundwater modeling and prediction",
+    "education": {
+      "bachelor": {
+        "university": "Ewha Woman's University, Earth Science Education"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Yeskendir Assankul": {
+    "Campus": "DJ",
+    "Room": "-",
+    "Program": "Undergraduated",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Yeskendir_Assankul.jpg",
+    "Year": "U4",
+    "name": "Yeskendir Assankul",
+    "Nationality": "Kazakhstan",
+    "KAIST Email": "yeskendir2502@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "-",
+    "Background": "",
+    "ResearchTheme": "",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, School of Computing"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Young Ko": {
+    "Campus": "DJ",
+    "Room": "-",
+    "Program": "Undergraduated (On leave)",
+    "image": "data/Databse%206df57d470cd6417a98ebfd4a446960e2/Young_Ko.jpg",
+    "Year": "U4",
+    "name": "Young Ko",
+    "Nationality": "Korea",
+    "KAIST Email": "young0406@kaist.ac.kr",
+    "Alternative Email": "kaist21ky@gmail.com",
+    "Phone Number": "010-9984-1915",
+    "Background": "",
+    "ResearchTheme": "",
+    "education": {
+      "bachelor": {
+        "university": "KAIST, School of Computing"
+      },
+      "master": null,
+      "phd": null
+    },
+    "publications": [],
+    "hasPublished": false
+  },
+  "Jiwon Choi": {
+    "Campus": "DJ",
+    "Room": "N5#2261-A",
+    "Program": "Administrative Staff",
+    "image": "Jiwon Choi",
+    "Year": "-",
+    "name": "Young Ko",
+    "Nationality": "Korea",
+    "KAIST Email": "jwchoii@kaist.ac.kr",
+    "Alternative Email": "wldnjs091457@gmail.com",
+    "Phone Number": "042-350-4043",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  },
+  "Eunjoo Min": {
+    "Campus": "DJ",
+    "Room": "N5#2261-A",
+    "Program": "Administrative Staff",
+    "image": "",
+    "Year": "-",
+    "name": "Eunjoo Min",
+    "Nationality": "Korea",
+    "KAIST Email": "minej@kaist.ac.kr",
+    "Alternative Email": "-",
+    "Phone Number": "042-350-4016",
+    "Background": "",
+    "ResearchTheme": "",
+    "hasPublished": false
+  }
+}
