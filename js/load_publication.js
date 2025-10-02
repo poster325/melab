@@ -13,7 +13,7 @@ let prev_year = 3000;
 readTextFile();
 function readTextFile() {
     var rawFile = new XMLHttpRequest();
-    rawFile.open("GET", "/assets/publication/publication.tsv", true);
+    rawFile.open("GET", "./assets/publication/publication.tsv", true);
     rawFile.onreadystatechange = function() {
         if (rawFile.readyState === 4) {
             var allText = rawFile.responseText;
@@ -85,6 +85,13 @@ function readTextFile() {
                     contatiner.appendChild(line);
                 }
             })
+            
+            // Trigger reveal animations after content is loaded
+            setTimeout(() => {
+              if (window.triggerContentReveals) {
+                window.triggerContentReveals();
+              }
+            }, 300);
         }
     }
 

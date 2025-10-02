@@ -17,6 +17,16 @@ html.loading body {
     overflow: hidden;
 }
 
+/* Ensure scroll works after loading */
+html.loaded {
+    overflow: auto !important;
+    height: auto;
+}
+
+html.loaded body {
+    overflow: auto;
+}
+
 /* Preloader */
 #page-preloader {
     position: fixed;
@@ -420,5 +430,78 @@ button:focus-visible {
     .main_page {
         transform: translateY(15px);
     }
+}
+
+/* ========================================
+   15. PUBLICATIONS YEAR NAVIGATION
+   ======================================== */
+
+.active-year {
+    color: #3b82f6 !important; /* Blue highlight */
+    font-weight: 700 !important;
+    transform: scale(1.15);
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Smooth transition for non-active years */
+[id^="year_"] {
+    transition: all 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* ========================================
+   16. NAVIGATION HOVER EFFECTS
+   ======================================== */
+
+.nav_item {
+    position: relative;
+    padding-bottom: 4px;
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Expanding bar underneath */
+.nav_item::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background: linear-gradient(90deg, #3b82f6, #60a5fa);
+    transform: translateX(-50%);
+    transition: width 0.4s cubic-bezier(0.4, 0.0, 0.2, 1);
+    opacity: 0;
+}
+
+/* Hover state */
+.nav_item:hover {
+    color: #3b82f6 !important;
+    transform: translateY(-2px);
+}
+
+.nav_item:hover::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Active page indicator */
+.nav_item.active {
+    color: #3b82f6 !important;
+}
+
+.nav_item.active::after {
+    width: 100%;
+    opacity: 1;
+}
+
+/* Smooth color transition */
+.nav_item,
+.nav_item i {
+    transition: all 0.3s cubic-bezier(0.4, 0.0, 0.2, 1);
+}
+
+/* Icon hover effect */
+.nav_item:hover i {
+    color: #3b82f6;
+    transform: scale(1.1);
 }
 

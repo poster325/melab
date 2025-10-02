@@ -40,15 +40,23 @@ class AdvancedAnimations {
     async preloadCriticalImages() {
         const images = [];
         
-        // Earth animation GIF
-        const earthGif = new Image();
-        earthGif.src = './assets/index/earth_animation/earthanim.gif';
-        images.push(this.loadImage(earthGif));
+        // Only preload if elements exist on page
+        const earthImg = document.getElementById('earth');
+        if (earthImg) {
+            const earthGif = new Image();
+            earthGif.src = './assets/index/earth_animation/earthanim.gif';
+            images.push(this.loadImage(earthGif));
 
-        // Background
-        const bgImg = new Image();
-        bgImg.src = './assets/index/earth_bg.jpg';
-        images.push(this.loadImage(bgImg));
+            // Background
+            const bgImg = new Image();
+            bgImg.src = './assets/index/earth_bg.jpg';
+            images.push(this.loadImage(bgImg));
+        }
+
+        // If no images to preload, just continue
+        if (images.length === 0) {
+            return Promise.resolve();
+        }
 
         // Wait for all critical images
         await Promise.all(images);
@@ -72,8 +80,9 @@ class AdvancedAnimations {
         // Small delay
         await this.wait(200);
 
-        // Remove no-scroll
-        document.documentElement.classList.remove('no-scroll');
+        // Remove no-scroll and loading classes
+        document.documentElement.classList.remove('no-scroll', 'loading');
+        document.body.classList.remove('no-scroll', 'loading');
         document.documentElement.classList.add('loaded');
 
         // Reveal header
@@ -128,6 +137,17 @@ class AdvancedAnimations {
         
         sections.forEach((section, index) => {
             this.revealSection(section, index * 150);
+        });
+
+        // Also reveal standalone elements with data-reveal (for new page structure)
+        const standaloneElements = document.querySelectorAll('body > main [data-reveal], body > * [data-reveal]');
+        standaloneElements.forEach((el, index) => {
+            // Skip if already inside a .main_page
+            if (!el.closest('.main_page')) {
+                setTimeout(() => {
+                    el.classList.add('revealed');
+                }, index * 150);
+            }
         });
 
         // Reveal indicator
@@ -218,9 +238,53 @@ class PageTransitions {
     }
 }
 
+// Mark active navigation item
+function markActiveNavItem() {
+    const currentPath = window.location.pathname;
+    const navItems = document.querySelectorAll('.nav_item');
+    
+    navItems.forEach(item => {
+        const href = item.getAttribute('href');
+        if (href) {
+            // Normalize paths for comparison
+            const normalizedHref = href.replace('./', '/').replace(/\\/g, '/');
+            const normalizedPath = currentPath.replace(/\\/g, '/');
+            
+            // Check if this nav item matches the current page
+            if (normalizedPath.endsWith(normalizedHref) || 
+                (normalizedHref.includes('about') && normalizedPath.includes('about')) ||
+                (normalizedHref.includes('news') && normalizedPath.includes('news')) ||
+                (normalizedHref.includes('people') && normalizedPath.includes('people')) ||
+                (normalizedHref.includes('publication') && normalizedPath.includes('publication')) ||
+                (normalizedHref.includes('contact') && normalizedPath.includes('contact'))) {
+                item.classList.add('active');
+            }
+        }
+    });
+}
+
+// Global function to trigger reveals for dynamically loaded content
+function triggerContentReveals(selector = '[data-reveal]') {
+    const elements = document.querySelectorAll(selector);
+    elements.forEach((el, index) => {
+        // Only reveal if not already revealed
+        if (!el.classList.contains('revealed')) {
+            setTimeout(() => {
+                el.classList.add('revealed');
+            }, index * 100);
+        }
+    });
+}
+
+// Expose globally
+window.triggerContentReveals = triggerContentReveals;
+
 // Initialize when script loads
 const animations = new AdvancedAnimations();
 const transitions = new PageTransitions();
+
+// Mark active nav after a short delay
+setTimeout(markActiveNavItem, 100);
 
 // Expose globally if needed
 window.advancedAnimations = animations;

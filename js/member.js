@@ -131,7 +131,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
 
     // Fetch members data and display the member
-    fetch('/js/members.json')
+    fetch('./js/members.json')
         .then(response => response.json())
         .then(members => {
             const params = getQueryParams();

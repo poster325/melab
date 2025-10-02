@@ -3,41 +3,40 @@ const totalYears = 2100 - 1850; // 250 years
 const totalFrames = 250; // Matching the GIF frame count
 const frameDuration = 60; // 0.06 seconds = 60ms per frame
 const animationDuration = totalFrames * frameDuration; // Total animation time in ms (15 seconds)
-const transitionTime = 2000; // 2 seconds (fade in + fade out)
-const effectiveAnimationDuration = animationDuration - transitionTime; // 13 seconds
-const yearInterval = effectiveAnimationDuration / totalYears; // ~52ms per year
+const yearInterval = animationDuration / totalYears; // 60ms per year to match GIF exactly
 const fadeOutDuration = 1000; // 1 second fade out
 const waitDuration = 1000; // 1 second wait
 const fadeInDuration = 1000; // 1 second fade in
 
 let currentYear = 1850;
 let yearAnimationInterval;
+let animationTimer = null;
 let isAnimating = false;
 
 // Get DOM elements
 const earthImage = document.getElementById('earth');
-const earthDate = document.getElementById('earth_date');
+const earthDatePrefix = document.getElementById('earth_date_prefix');
+const earthDateAd = document.getElementById('earth_date_ad');
+const earthDateYear = document.getElementById('earth_date_year');
 
-// Function to get year label
-function getYearLabel(year) {
+// Function to get year prefix
+function getYearPrefix(year) {
     // Historical period up to around 2015, then SSP585 projection
     if (year <= 2015) {
-        return `Historical, A.D. ${year}`;
+        return 'Historical';
     } else {
-        return `SSP585, A.D. ${year}`;
+        return 'SSP585';
     }
 }
 
 // Function to update year display
 function updateYear() {
-    earthDate.textContent = getYearLabel(currentYear);
+    earthDatePrefix.textContent = getYearPrefix(currentYear);
+    earthDateYear.textContent = currentYear;
     
-    // Increment year
-    currentYear++;
-    if (currentYear > 2100) {
-        // Stop the year animation and start fade out sequence
-        stopYearAnimation();
-        startFadeOutSequence();
+    // Increment year (will be capped at 2100)
+    if (currentYear < 2100) {
+        currentYear++;
     }
 }
 
@@ -45,9 +44,13 @@ function updateYear() {
 function fadeOut() {
     return new Promise((resolve) => {
         earthImage.style.transition = `opacity ${fadeOutDuration}ms ease-in-out`;
-        earthDate.style.transition = `opacity ${fadeOutDuration}ms ease-in-out`;
+        earthDatePrefix.style.transition = `opacity ${fadeOutDuration}ms ease-in-out`;
+        earthDateAd.style.transition = `opacity ${fadeOutDuration}ms ease-in-out`;
+        earthDateYear.style.transition = `opacity ${fadeOutDuration}ms ease-in-out`;
         earthImage.style.opacity = '0';
-        earthDate.style.opacity = '0';
+        earthDatePrefix.style.opacity = '0';
+        earthDateAd.style.opacity = '0';
+        earthDateYear.style.opacity = '0';
         setTimeout(resolve, fadeOutDuration);
     });
 }
@@ -56,9 +59,13 @@ function fadeOut() {
 function fadeIn() {
     return new Promise((resolve) => {
         earthImage.style.transition = `opacity ${fadeInDuration}ms ease-in-out`;
-        earthDate.style.transition = `opacity ${fadeInDuration}ms ease-in-out`;
+        earthDatePrefix.style.transition = `opacity ${fadeInDuration}ms ease-in-out`;
+        earthDateAd.style.transition = `opacity ${fadeInDuration}ms ease-in-out`;
+        earthDateYear.style.transition = `opacity ${fadeInDuration}ms ease-in-out`;
         earthImage.style.opacity = '1';
-        earthDate.style.opacity = '1';
+        earthDatePrefix.style.opacity = '1';
+        earthDateAd.style.opacity = '1';
+        earthDateYear.style.opacity = '1';
         setTimeout(resolve, fadeInDuration);
     });
 }
@@ -77,7 +84,8 @@ function resetToStart() {
     
     // Reset year
     currentYear = 1850;
-    earthDate.textContent = getYearLabel(currentYear);
+    earthDatePrefix.textContent = getYearPrefix(currentYear);
+    earthDateYear.textContent = currentYear;
 }
 
 // Fade out sequence
@@ -110,6 +118,16 @@ function startYearAnimation() {
     
     // Set interval for year updates
     yearAnimationInterval = setInterval(updateYear, yearInterval);
+    
+    // Set timer to trigger fade sequence after exactly animationDuration
+    // This ensures GIF and fade are perfectly synchronized
+    if (animationTimer) {
+        clearTimeout(animationTimer);
+    }
+    animationTimer = setTimeout(() => {
+        stopYearAnimation();
+        startFadeOutSequence();
+    }, animationDuration);
 }
 
 // Stop year animation
@@ -118,17 +136,24 @@ function stopYearAnimation() {
         clearInterval(yearAnimationInterval);
         yearAnimationInterval = null;
     }
+    if (animationTimer) {
+        clearTimeout(animationTimer);
+        animationTimer = null;
+    }
 }
 
 // Start animation with fade in when DOM is loaded
 async function initAnimation() {
     // Set initial opacity to 0
     earthImage.style.opacity = '0';
-    earthDate.style.opacity = '0';
+    earthDatePrefix.style.opacity = '0';
+    earthDateAd.style.opacity = '0';
+    earthDateYear.style.opacity = '0';
     
     // Reset to start
     currentYear = 1850;
-    earthDate.textContent = getYearLabel(currentYear);
+    earthDatePrefix.textContent = getYearPrefix(currentYear);
+    earthDateYear.textContent = currentYear;
     
     // Fade in
     await fadeIn();

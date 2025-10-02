@@ -10,12 +10,24 @@
     />
 
     <!--  CSS  -->
-    <link rel="stylesheet" href="/css/basic.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <link rel="stylesheet" href="./css/advanced_animations.css" />
 
     <title>Meta Earth Lab</title>
   </head>
   <body>
     
+    <!-- PRELOADER -->
+    <div id="page-preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <img src="./assets/lab_icon.svg" alt="Meta Earth Lab" />
+        </div>
+        <div class="preloader-text">Loading...</div>
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+
     <!--  HEADER  -->
     <header class="header" id="header">
 
@@ -62,8 +74,8 @@
     </header>
 
     <!--  MAIN  -->
-    <main class="main flex flex-col items-center" style="margin-top: calc(52px + 64px); margin-bottom: calc(64px);">
-      <div id="publications_container" style="display: flex; flex-direction: column; width: 100%; max-width: 1128px; gap: 0px;"></div>
+    <main class="main flex flex-col items-center" style="margin-top: calc(52px + 64px); margin-bottom: calc(64px); padding: 0;">
+      <div id="publications_container" style="display: flex; flex-direction: column; width: 100%; max-width: 1128px; gap: 0px;" data-reveal="bottom"></div>
       <div
         style="
           display: flex;
@@ -79,6 +91,7 @@
           border-radius: 8px;
           translate: 0 -50%;
         "
+        data-reveal="fade"
       >
         <div
           id="year_2023"
@@ -249,8 +262,9 @@
       &#169; Meta Earth Lab. All rights reserved
     </footer>
 
-    <script type="module" src="/js/load_publication.js"></script>
-    <script src="/js/find_publication.js"></script>
+    <script type="module" src="./js/load_publication.js"></script>
+    <script src="./js/find_publication.js"></script>
+    <script src="./js/advanced_animations.js"></script>
   </body>
 
 </html>

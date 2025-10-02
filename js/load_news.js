@@ -27,7 +27,8 @@ for(let i=0; i<data_list.length; i++){
     
     let content = await loadNewsMD(path);
     if (content == null) {
-        continue
+        // Skip this news item if file doesn't exist
+        continue;
     }
     content = content.split('\n\n').splice(2).join('\n\n')
     // console.log(content.split('\n\n').splice(2).join('\n\n'))
@@ -74,35 +75,223 @@ if (highlightedNews.length > 0) {
 
 // Initialize highlighted news slideshow
 function initHighlightedNews(newsData) {
-    const highlightedImage = document.getElementById('highlighted_image');
-    const highlightedTitle = document.getElementById('highlighted_title');
-    const highlightedContent = document.getElementById('highlighted_content');
-    const highlightedTime = document.getElementById('highlighted_time');
+    const container = document.getElementById('highlight_cards_container');
     
     const btn1 = document.getElementById('highlight_btn1');
     const btn2 = document.getElementById('highlight_btn2');
     const btn3 = document.getElementById('highlight_btn3');
     
-    function changeHighlighted(index) {
-        const news = newsData[index];
-        highlightedImage.style.backgroundImage = `url(${news.image})`;
-        highlightedTitle.textContent = news.title;
-        highlightedContent.textContent = news.content;
-        highlightedTime.textContent = `${news.time}, ${news.location}`;
+    const prevBtn = document.getElementById('highlight_prev');
+    const nextBtn = document.getElementById('highlight_next');
+    
+    let currentIndex = 0;
+    let isAnimating = false;
+    const cards = [];
+    
+    // Create all cards
+    newsData.forEach((news, index) => {
+        const card = document.createElement('div');
+        card.style.cssText = `
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            border-radius: 0;
+            overflow: hidden;
+            box-shadow: 0 8px 32px rgba(0,0,0,0.1);
+            background-image: url(${news.image});
+            background-size: cover;
+            background-position: center;
+            transition: transform 0.6s cubic-bezier(0.4, 0.0, 0.2, 1);
+            transform: translateX(${index === 0 ? '0%' : '105%'});
+            z-index: ${index === 0 ? '10' : '0'};
+        `;
         
-        // Update dots
-        btn1.style.backgroundColor = index === 0 ? '#000' : '#ccc';
-        btn2.style.backgroundColor = index === 1 ? '#000' : '#ccc';
-        btn3.style.backgroundColor = index === 2 ? '#000' : '#ccc';
+        // Create text overlay
+        const overlay = document.createElement('div');
+        overlay.style.cssText = `
+            background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+            position: absolute;
+            bottom: 0;
+            width: 100%;
+            padding: 48px 32px;
+            box-sizing: border-box;
+        `;
+        
+        const textContainer = document.createElement('div');
+        textContainer.style.cssText = 'max-width: 100%; overflow: hidden;';
+        
+        const title = document.createElement('div');
+        title.textContent = news.title;
+        title.style.cssText = `
+            color: white;
+            font-weight: 600;
+            font-size: 28px;
+            margin-bottom: 12px;
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        `;
+        
+        const content = document.createElement('div');
+        content.textContent = news.content;
+        content.style.cssText = `
+            color: rgba(255,255,255,0.9);
+            font-weight: 400;
+            font-size: 16px;
+            margin-bottom: 12px;
+            display: -webkit-box;
+            -webkit-line-clamp: 2;
+            -webkit-box-orient: vertical;
+            overflow: hidden;
+            line-height: 1.5;
+        `;
+        
+        const time = document.createElement('div');
+        time.textContent = `${news.time}, ${news.location}`;
+        time.style.cssText = `
+            color: rgba(255,255,255,0.7);
+            font-weight: 400;
+            font-size: 14px;
+        `;
+        
+        textContainer.appendChild(title);
+        textContainer.appendChild(content);
+        textContainer.appendChild(time);
+        overlay.appendChild(textContainer);
+        card.appendChild(overlay);
+        container.appendChild(card);
+        
+        cards.push(card);
+    });
+    
+    function updateDots() {
+        btn1.style.backgroundColor = currentIndex === 0 ? '#000' : '#ccc';
+        btn2.style.backgroundColor = currentIndex === 1 ? '#000' : '#ccc';
+        btn3.style.backgroundColor = currentIndex === 2 ? '#000' : '#ccc';
     }
     
-    // Initial load
-    changeHighlighted(0);
+    function updateButtons() {
+        // Disable/hide prev button on first slide
+        if (currentIndex === 0) {
+            prevBtn.style.opacity = '0.3';
+            prevBtn.style.pointerEvents = 'none';
+        } else {
+            prevBtn.style.opacity = '1';
+            prevBtn.style.pointerEvents = 'auto';
+        }
+        
+        // Disable/hide next button on last slide
+        if (currentIndex === newsData.length - 1) {
+            nextBtn.style.opacity = '0.3';
+            nextBtn.style.pointerEvents = 'none';
+        } else {
+            nextBtn.style.opacity = '1';
+            nextBtn.style.pointerEvents = 'auto';
+        }
+    }
     
-    // Attach click handlers
-    btn1.onclick = () => changeHighlighted(0);
-    btn2.onclick = () => changeHighlighted(1);
-    btn3.onclick = () => changeHighlighted(2);
+    function goToSlide(newIndex, direction = 'next') {
+        if (isAnimating || newIndex === currentIndex) return;
+        
+        isAnimating = true;
+        const oldIndex = currentIndex;
+        
+        // Determine slide direction with spacing
+        const slideOutDirection = direction === 'next' ? '-105%' : '105%';
+        const slideInFrom = direction === 'next' ? '105%' : '-105%';
+        
+        // Set up new card
+        cards[newIndex].style.zIndex = '9';
+        cards[newIndex].style.transform = `translateX(${slideInFrom})`;
+        
+        // Force reflow
+        cards[newIndex].offsetHeight;
+        
+        // Slide out current card
+        cards[oldIndex].style.transform = `translateX(${slideOutDirection})`;
+        
+        // Slide in new card
+        cards[newIndex].style.transform = 'translateX(0)';
+        
+        currentIndex = newIndex;
+        updateDots();
+        updateButtons();
+        
+        setTimeout(() => {
+            // Reset old card
+            cards[oldIndex].style.zIndex = '0';
+            
+            // Set new card as active
+            cards[newIndex].style.zIndex = '10';
+            
+            isAnimating = false;
+        }, 600);
+    }
+    
+    function goToNext() {
+        // Don't cycle - stop at last card
+        if (currentIndex < newsData.length - 1) {
+            goToSlide(currentIndex + 1, 'next');
+        }
+    }
+    
+    function goToPrev() {
+        // Don't cycle - stop at first card
+        if (currentIndex > 0) {
+            goToSlide(currentIndex - 1, 'prev');
+        }
+    }
+    
+    // Initial state
+    updateDots();
+    updateButtons();
+    
+    // Attach click handlers for dots
+    btn1.onclick = () => {
+        const direction = currentIndex > 0 ? 'prev' : 'next';
+        goToSlide(0, direction);
+    };
+    btn2.onclick = () => {
+        const direction = currentIndex > 1 ? 'prev' : 'next';
+        goToSlide(1, direction);
+    };
+    btn3.onclick = () => {
+        const direction = currentIndex > 2 ? 'prev' : 'next';
+        goToSlide(2, direction);
+    };
+    
+    // Attach click handlers for arrow buttons
+    prevBtn.onclick = goToPrev;
+    nextBtn.onclick = goToNext;
+    
+    // Add hover effects for arrow buttons (only when enabled)
+    prevBtn.onmouseenter = () => {
+        if (currentIndex > 0) {
+            prevBtn.style.background = 'rgba(255,255,255,1)';
+            prevBtn.style.transform = 'translateY(-50%) scale(1.1)';
+        }
+    };
+    prevBtn.onmouseleave = () => {
+        if (currentIndex > 0) {
+            prevBtn.style.background = 'rgba(255,255,255,0.9)';
+            prevBtn.style.transform = 'translateY(-50%) scale(1)';
+        }
+    };
+    
+    nextBtn.onmouseenter = () => {
+        if (currentIndex < newsData.length - 1) {
+            nextBtn.style.background = 'rgba(255,255,255,1)';
+            nextBtn.style.transform = 'translateY(-50%) scale(1.1)';
+        }
+    };
+    nextBtn.onmouseleave = () => {
+        if (currentIndex < newsData.length - 1) {
+            nextBtn.style.background = 'rgba(255,255,255,0.9)';
+            nextBtn.style.transform = 'translateY(-50%) scale(1)';
+        }
+    };
 }
 
 async function loadNewsMD(filepath, use_regex = false) {
@@ -114,14 +303,21 @@ async function loadNewsMD(filepath, use_regex = false) {
       }
     }
     if (filepath) {
-      const response = await fetch('./data/news/' + filepath)
-      if (!response.ok) {
-        throw new Error('error')
+      try {
+        const response = await fetch('./data/news/' + filepath)
+        if (!response.ok) {
+          console.warn('News file not found:', filepath);
+          return null;
+        }
+        const text = await response.text();
+        // console.log(text);
+        return text;
+      } catch (error) {
+        console.warn('Error loading news file:', filepath, error);
+        return null;
       }
-      const text = await response.text();
-      // console.log(text);
-      return text;
     }
+    return null;
 }
 
 

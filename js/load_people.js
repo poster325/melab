@@ -11,7 +11,7 @@ let selected = "none"; // "member_name"
 
 
 
-const response = await fetch('/data/people/People aa379227474043d7a198275297c2fa3f_all.csv')
+const response = await fetch('./data/people/People aa379227474043d7a198275297c2fa3f_all.csv')
 if (!response.ok) {
     throw new Error('error')
 }
@@ -37,7 +37,7 @@ types.forEach(type => {
   contatiner.style.width = "100%";
   // contatiner.style.maxWidth = "1128px";
   contatiner.style.display = "grid";
-  contatiner.style.gridTemplateColumns = "repeat(auto-fill, minmax(196px, 1fr))";
+  contatiner.style.gridTemplateColumns = "repeat(4, 1fr)";
   contatiner.style.rowGap = "52px";
   contatiner.style.columnGap = "52px";
   contatiner.style.transition = "300ms";
@@ -90,7 +90,7 @@ types.forEach(type => {
     const email = data["email"];
     const position = data["Position"];
     const campus = data["Campus"];
-    const image = (data["image"] && data["image"] !== "" && data["image"] !== "undefined") ? "data/people/" + data["image"] : '/assets/people/placeholder.png';
+    const image = (data["image"] && data["image"] !== "" && data["image"] !== "undefined") ? "./data/people/" + data["image"] : './assets/people/placeholder.png';
 
     const temp_people_card = document.createElement('a');
     temp_people_card.classList.add("hover_dim");
@@ -131,7 +131,7 @@ types.forEach(type => {
         loadMemberData(undefined);
         temp_people_card.scrollIntoView({block: "center"});
       } else {
-        fetch('/js/members.json')
+        fetch('./js/members.json')
         .then(response => response.json())
         .then(members => {
           //console.log(members)
@@ -162,11 +162,19 @@ types.forEach(type => {
   temp.style.flexDirection = "column"
   temp.style.gap = "24px"
   temp.style.width = "100%"
+  temp.setAttribute('data-reveal', 'bottom');
   temp.appendChild(title);
   temp.appendChild(contatiner);
   temp.appendChild(hr);
   profile_type_container.appendChild(temp);
 });
+
+// Trigger reveal animations after content is loaded
+setTimeout(() => {
+  if (window.triggerContentReveals) {
+    window.triggerContentReveals();
+  }
+}, 300);
 
 function csvToArray(str, delimiter = ",") {
     // Normalize line endings to \n
@@ -211,11 +219,14 @@ function groupByYear(publications) {
 function loadMemberData(person) {
   const mainContent = document.getElementById('main-info');
   const headerElement = document.getElementById('profile-info');
+  const detailContainer = document.getElementById('profile_detail_container');
 
   if (person) {
     profile_type_container.style.width = "256px";
+    profile_type_container.style.flexShrink = "0";
+    detailContainer.style.display = "block";
     types.forEach(type => {
-      document.getElementById(type).style.gridTemplateColumns = "repeat(1, minmax(196px, 1fr))";
+      document.getElementById(type).style.gridTemplateColumns = "repeat(1, 1fr)";
     })
 
     
@@ -317,7 +328,7 @@ function loadMemberData(person) {
     headerElement.innerHTML = `
       <div class="personal-info">
         ${
-          person.type != "Alumni" ? `<img src="${(person.image && person.image !== "" && person.image !== "undefined") ? "data/people/" + person.image : '/assets/people/placeholder.png'}" alt="${person.Name}'s profile" class="profile-img" />` : ``
+          person.type != "Alumni" ? `<img src="${(person.image && person.image !== "" && person.image !== "undefined") ? "./data/people/" + person.image : './assets/people/placeholder.png'}" alt="${person.Name}'s profile" class="profile-img" />` : ``
         }
         <div class="profile-text">
           <div class="name">${person.Name}</div>
@@ -328,10 +339,12 @@ function loadMemberData(person) {
     `;
 
   } else {
-    profile_type_container.style.width = "";
+    profile_type_container.style.width = "100%";
+    profile_type_container.style.flexShrink = "1";
+    detailContainer.style.display = "none";
 
     types.forEach(type => {
-      document.getElementById(type).style.gridTemplateColumns = "repeat(auto-fill, minmax(196px, 1fr))";
+      document.getElementById(type).style.gridTemplateColumns = "repeat(4, 1fr)";
     })
 
     mainContent.innerHTML = "";

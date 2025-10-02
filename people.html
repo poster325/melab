@@ -10,14 +10,26 @@
     />
 
     <!--  CSS  -->
-    <link rel="stylesheet" href="/css/basic.css" />
-    <!-- <link rel="stylesheet" href="/css/memberstyles.css" /> -->
-    <link rel="stylesheet" href="/css/memberdata.css" />
+    <link rel="stylesheet" href="./css/basic.css" />
+    <!-- <link rel="stylesheet" href="./css/memberstyles.css" /> -->
+    <link rel="stylesheet" href="./css/memberdata.css" />
+    <link rel="stylesheet" href="./css/advanced_animations.css" />
 
     <title>Meta Earth Lab</title>
   </head>
   <body>
     
+    <!-- PRELOADER -->
+    <div id="page-preloader">
+      <div class="preloader-content">
+        <div class="preloader-logo">
+          <img src="./assets/lab_icon.svg" alt="Meta Earth Lab" />
+        </div>
+        <div class="preloader-text">Loading...</div>
+        <div class="preloader-spinner"></div>
+      </div>
+    </div>
+
     <!--  HEADER  -->
     <header class="header" id="header">
 
@@ -65,12 +77,12 @@
 
     <!--  MAIN  -->
     
-    <main class="main flex" style="margin-top: calc(52px + 64px);">
-      <div style="width: 100%; max-width: 1128px; height: calc(100%); position: fixed; display: flex; flex-direction: row; justify-content: space-between; gap: 64px; margin-bottom: calc(32px + 64px);">
-        <div id="profile_type_list" style="width: 100%; max-width: 1128px; display: flex; flex-direction: column; align-items: center; gap: 96px; overflow: scroll;">
+    <main class="main flex" style="margin-top: calc(52px + 64px); padding: 0;">
+      <div style="width: 100%; max-width: 1128px; height: calc(100%); position: fixed; display: flex; flex-direction: row; justify-content: space-between; gap: 64px; margin-bottom: calc(32px + 64px); left: 50%; transform: translateX(-50%);" data-reveal="fade">
+        <div id="profile_type_list" style="width: 100%; display: flex; flex-direction: column; align-items: center; gap: 96px; overflow: scroll;">
         
         </div>
-        <div style="flex: 1; overflow: scroll;">
+        <div id="profile_detail_container" style="flex: 1; overflow: scroll; display: none;">
           <section id="profile-info" style="width: 100%; margin-bottom: 32px">
             
           </section>
@@ -87,7 +99,8 @@
       &#169; Meta Earth Lab. All rights reserved
     </footer>
 
-    <script type="module" src="/js/load_people.js"></script>
+    <script type="module" src="./js/load_people.js"></script>
+    <script src="./js/advanced_animations.js"></script>
   </body>
 
 </html>
